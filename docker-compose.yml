@@ -1,0 +1,17 @@
+services:
+  jp-quiz:
+    build: .
+    container_name: jp-quiz
+    volumes:
+      - ./data:/app/data
+    environment:
+      - DB_PATH=/app/data/quiz.db
+      - QUESTIONS_PATH=/app/data/jp_questions.json
+      - SUBPATH=/jp-quiz
+    networks:
+      - proxy
+    restart: unless-stopped
+
+networks:
+  proxy:
+    external: true

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Japonais Touriste</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #f7f5f2; --surface: #fff; --border: #e0ddd8; --text: #1a1a1a;
+    --muted: #666; --accent: #b5001e; --correct: #2a7a2a; --wrong: #8b1a1a;
+    --badge1: #b5001e; --badge2: #7a4a1a; --badge3: #1a4a7a;
+    --reconfirm: #1a5a7a; --font: system-ui, -apple-system, sans-serif;
+  }
+  body { font-family: var(--font); background: var(--bg); color: var(--text);
+    min-height: 100vh; display: flex; flex-direction: column; }
+
+  /* ── ÉCRAN PSEUDO ── */
+  #login-screen {
+    flex: 1; display: flex; align-items: center; justify-content: center;
+    background: linear-gradient(135deg, #b5001e 0%, #7a0015 100%);
+  }
+  .login-box {
+    background: var(--surface); border-radius: 12px; padding: 44px 40px;
+    max-width: 380px; width: 90%; text-align: center;
+    box-shadow: 0 8px 32px rgba(0,0,0,.2);
+  }
+  .login-logo { font-size: 3rem; margin-bottom: 6px; }
+  .login-box h1 { font-size: 1.5rem; color: var(--accent); margin-bottom: 4px; font-weight: 800; }
+  .login-box p  { color: var(--muted); font-size: .88rem; margin-bottom: 28px; line-height: 1.5; }
+  .login-input {
+    width: 100%; padding: 11px 14px; border: 1.5px solid var(--border);
+    border-radius: 8px; font-size: 1rem; font-family: var(--font);
+    margin-bottom: 14px; text-align: center;
+  }
+  .login-input:focus { outline: 2px solid var(--accent); border-color: transparent; }
+  .btn-login {
+    width: 100%; padding: 12px; background: var(--accent); color: #fff;
+    border: none; border-radius: 8px; font-size: 1rem; font-weight: 700;
+    cursor: pointer; letter-spacing: .03em;
+  }
+  .btn-login:hover { opacity: .88; }
+  .login-error { color: var(--wrong); font-size: .85rem; margin-top: 10px; }
+
+  /* ── HEADER ── */
+  header { background: var(--accent); color: #fff; padding: 12px 20px;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 12px; flex-wrap: wrap; }
+  .header-left { display: flex; align-items: center; gap: 14px; }
+  header h1 { font-size: 1.1rem; font-weight: 800; letter-spacing: .05em; white-space: nowrap; }
+  #user-badge {
+    font-size: .8rem; background: rgba(255,255,255,.18);
+    border: 1px solid rgba(255,255,255,.3); border-radius: 20px;
+    padding: 3px 12px; display: flex; align-items: center; gap: 8px;
+  }
+  #user-badge button {
+    background: none; border: none; color: rgba(255,255,255,.7);
+    cursor: pointer; font-size: .75rem; padding: 0;
+  }
+  #user-badge button:hover { color: #fff; }
+  #stats-bar { display: flex; gap: 14px; font-size: .82rem; flex-wrap: wrap; }
+  .stat { display: flex; align-items: center; gap: 4px; opacity: .9; }
+  .stat-val { font-weight: 700; }
+  .btn-header { background: rgba(255,255,255,.15); color: #fff;
+    border: 1px solid rgba(255,255,255,.35); padding: 5px 12px;
+    border-radius: 4px; cursor: pointer; font-size: .8rem; }
+  .btn-header:hover { background: rgba(255,255,255,.25); }
+  .header-actions { display: flex; gap: 8px; flex-shrink: 0; }
+
+  /* ── MAIN ── */
+  main { flex: 1; max-width: 760px; width: 100%; margin: 0 auto; padding: 24px 16px; }
+  .card { background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; padding: 24px; margin-bottom: 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.05); }
+  .question-meta { display: flex; align-items: center; gap: 10px;
+    margin-bottom: 18px; flex-wrap: wrap; }
+  .badge { display: inline-block; padding: 4px 12px; border-radius: 20px;
+    font-size: .75rem; font-weight: 700; color: #fff; }
+  .badge-1 { background: var(--badge1); }
+  .badge-2 { background: var(--badge2); }
+  .badge-3 { background: var(--badge3); }
+  .badge-label-1::before { content: 'Débutant'; }
+  .badge-label-2::before { content: 'Intermédiaire'; }
+  .badge-label-3::before { content: 'Avancé'; }
+  .etat-badge { font-size: .72rem; padding: 2px 8px; border-radius: 20px;
+    font-weight: 600; color: #fff; }
+  .etat-a_retravailler  { background: var(--wrong); }
+  .etat-a_reconfirmer_1, .etat-a_reconfirmer_2 { background: var(--reconfirm); }
+  .question-id { font-size: .75rem; color: var(--muted); margin-left: auto; }
+  .question-text { font-size: 1.2rem; line-height: 1.6; font-weight: 600; }
+  .question-hint { font-size: .85rem; color: var(--muted); margin-top: 8px;
+    font-style: italic; }
+  .answer-area { width: 100%; min-height: 70px; padding: 10px 14px;
+    border: 1.5px solid var(--border); border-radius: 8px; font-family: var(--font);
+    font-size: 1rem; resize: vertical; margin-bottom: 12px; background: #fafaf8; }
+  .answer-area:focus { outline: 2px solid var(--accent); border-color: transparent; }
+  .answer-area::placeholder { color: #ccc; }
+  .btn { display: inline-flex; align-items: center; gap: 6px; padding: 11px 20px;
+    border-radius: 8px; border: none; cursor: pointer; font-size: .95rem;
+    font-weight: 600; transition: opacity .15s; }
+  .btn-reveal { background: var(--accent); color: #fff; width: 100%; justify-content: center; }
+  .btn-reveal:hover { opacity: .88; }
+  .btn-correct { background: var(--correct); color: #fff; flex: 1; justify-content: center; }
+  .btn-wrong   { background: var(--wrong);   color: #fff; flex: 1; justify-content: center; }
+  .btn-correct:hover, .btn-wrong:hover { opacity: .88; }
+  .eval-row { display: flex; gap: 12px; margin-top: 16px; }
+
+  /* ── CARTE RÉPONSE ── */
+  .answer-card { background: #fdf9f0; border-left: 4px solid var(--accent);
+    border-radius: 0 10px 10px 0; padding: 18px 20px; margin-top: 16px; }
+  .answer-card-label { font-size: .72rem; text-transform: uppercase;
+    letter-spacing: .1em; color: var(--muted); margin-bottom: 4px; font-weight: 600; }
+  .answer-romaji { font-size: 1.5rem; font-weight: 800; color: var(--accent);
+    margin-bottom: 14px; letter-spacing: .02em; }
+  .answer-expl-label { font-size: .72rem; text-transform: uppercase;
+    letter-spacing: .1em; color: var(--muted); margin-bottom: 4px; font-weight: 600; }
+  .answer-kanji { font-size: 1.05rem; margin-bottom: 6px; line-height: 1.6;
+    color: #333; }
+  .answer-context { font-size: .88rem; color: #555; line-height: 1.6; }
+  .answer-tags { margin-top: 10px; display: flex; gap: 6px; flex-wrap: wrap; }
+  .tag-chip { font-size: .72rem; padding: 2px 10px; border-radius: 20px;
+    background: #f0ede8; color: #666; font-weight: 500; }
+
+  /* ── MODAL ── */
+  .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,.55);
+    display: flex; align-items: center; justify-content: center; z-index: 100; }
+  .modal { background: var(--surface); border-radius: 12px; padding: 32px 36px;
+    max-width: 420px; width: 90%; text-align: center; }
+  .modal h2 { font-size: 1.3rem; margin-bottom: 20px; color: var(--accent); }
+  .bilan-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 24px; }
+  .bilan-item { padding: 14px; border-radius: 10px; background: var(--bg); }
+  .bilan-item .num { font-size: 1.9rem; font-weight: 800; }
+  .bilan-item .label { font-size: .8rem; color: var(--muted); margin-top: 2px; }
+  .bilan-item.maitrisee .num    { color: var(--correct); }
+  .bilan-item.en-cours .num     { color: var(--reconfirm); }
+  .bilan-item.retravailler .num { color: var(--wrong); }
+  .bilan-item.non-vue .num      { color: #999; }
+  .btn-continue { background: var(--accent); color: #fff; padding: 12px 32px;
+    border-radius: 8px; border: none; cursor: pointer; font-size: 1rem; font-weight: 700; }
+
+  /* ── ÉTATS ── */
+  .empty-state { text-align: center; padding: 60px 20px; color: var(--muted); }
+  .empty-state h2 { font-size: 1.4rem; margin-bottom: 10px; color: var(--text); }
+  .result-feedback { margin-top: 10px; padding: 9px 16px; border-radius: 8px;
+    font-size: .9rem; font-weight: 600; }
+  .result-correct { background: #e8f5e8; color: var(--correct); }
+  .result-wrong   { background: #fae8e8; color: var(--wrong); }
+  .hidden { display: none !important; }
+
+  /* ── PROGRESS BAR ── */
+  .progress-wrap { background: #e8e4df; height: 4px; width: 100%; margin-bottom: 20px;
+    border-radius: 2px; overflow: hidden; }
+  .progress-bar { height: 100%; background: var(--accent); border-radius: 2px;
+    transition: width .4s ease; }
+</style>
+</head>
+<body>
+
+<!-- ── ÉCRAN PSEUDO ── -->
+<div id="login-screen" class="hidden">
+  <div class="login-box">
+    <div class="login-logo">🇯🇵</div>
+    <h1>Japonais Touriste</h1>
+    <p>100 expressions essentielles pour voyager au Japon.<br>Ta progression est sauvegardée.</p>
+    <input id="pseudo-input" class="login-input" type="text"
+      placeholder="Ton prénom ou pseudo" maxlength="32" autocomplete="off">
+    <button class="btn-login" onclick="doLogin()">Commencer →</button>
+    <div id="login-error" class="login-error hidden"></div>
+  </div>
+</div>
+
+<!-- ── APP ── -->
+<div id="app" class="hidden" style="display:flex;flex-direction:column;min-height:100vh;">
+
+<header>
+  <div class="header-left">
+    <h1>🇯🇵 Japonais Touriste</h1>
+    <div id="user-badge">
+      <span id="user-name"></span>
+      <button onclick="changeUser()" title="Changer de pseudo">⇄</button>
+    </div>
+  </div>
+  <div id="stats-bar">
+    <span class="stat">✅ <span class="stat-val" id="s-maitrisee">0</span> maîtrisées</span>
+    <span class="stat">🔄 <span class="stat-val" id="s-reconfirmer">0</span> en cours</span>
+    <span class="stat">❌ <span class="stat-val" id="s-retravailler">0</span> à revoir</span>
+    <span class="stat">❓ <span class="stat-val" id="s-nonvue">0</span> à voir</span>
+  </div>
+  <div class="header-actions">
+    <button class="btn-header" onclick="confirmReset()">🔄 Reset</button>
+  </div>
+</header>
+
+<main>
+  <div id="progress-wrap" class="progress-wrap hidden">
+    <div id="progress-bar" class="progress-bar" style="width:0%"></div>
+  </div>
+
+  <div id="empty-state" class="empty-state hidden">
+    <h2>Aucune question chargée</h2>
+    <p>Erreur de chargement des questions.</p>
+  </div>
+
+  <div id="done-state" class="empty-state hidden">
+    <h2>🏆 Félicitations !</h2>
+    <p>Tu as maîtrisé toutes les expressions disponibles.<br>
+    Tu es prêt(e) pour le Japon !</p>
+  </div>
+
+  <div id="question-card" class="card hidden">
+    <div class="question-meta">
+      <span id="q-badge" class="badge badge-1">Débutant</span>
+      <span id="q-etat-badge" class="etat-badge hidden"></span>
+      <span id="q-id" class="question-id"></span>
+    </div>
+    <p id="q-text" class="question-text"></p>
+    <p class="question-hint">Comment dit-on ça en japonais (phonétique) ?</p>
+  </div>
+
+  <div id="answer-section" class="hidden">
+    <textarea id="user-answer" class="answer-area"
+      placeholder="Essaie d'écrire la prononciation japonaise… (optionnel)"></textarea>
+    <button class="btn btn-reveal" onclick="revealAnswer()">🔍 Révéler la réponse</button>
+  </div>
+
+  <div id="reference-card" class="card hidden">
+    <div class="answer-card">
+      <div class="answer-card-label">Prononciation (romaji)</div>
+      <div id="ref-text" class="answer-romaji"></div>
+      <div class="answer-expl-label">Écriture japonaise &amp; notes</div>
+      <div id="expl-text" class="answer-kanji"></div>
+      <div id="tags-row" class="answer-tags"></div>
+    </div>
+    <div class="eval-row">
+      <button class="btn btn-wrong"   onclick="submitAnswer(false)">✗ Je ne savais pas</button>
+      <button class="btn btn-correct" onclick="submitAnswer(true)">✓ Je savais</button>
+    </div>
+  </div>
+
+  <div id="result-feedback" class="result-feedback hidden"></div>
+</main>
+
+</div><!-- #app -->
+
+<!-- ── BILAN MODAL ── -->
+<div id="bilan-modal" class="modal-overlay hidden">
+  <div class="modal">
+    <h2 id="bilan-titre">📊 Bilan</h2>
+    <div class="bilan-grid">
+      <div class="bilan-item maitrisee">
+        <div class="num" id="b-maitrisee">0</div><div class="label">Maîtrisées</div>
+      </div>
+      <div class="bilan-item en-cours">
+        <div class="num" id="b-reconfirmer">0</div><div class="label">En cours</div>
+      </div>
+      <div class="bilan-item retravailler">
+        <div class="num" id="b-retravailler">0</div><div class="label">À revoir</div>
+      </div>
+      <div class="bilan-item non-vue">
+        <div class="num" id="b-nonvue">0</div><div class="label">À découvrir</div>
+      </div>
+    </div>
+    <button class="btn-continue" onclick="closeBilan()">Continuer →</button>
+  </div>
+</div>
+
+<script>
+const BASE = '{{BASE}}';
+const state = { phase: 'idle', question: null, user: null };
+
+(async function init() {
+  const me = await api('GET', BASE + '/api/me');
+  if (!me) {
+    showLogin();
+  } else {
+    state.user = me.user;
+    showApp();
+    await refreshStats();
+    await loadQuestion();
+  }
+})();
+
+function showLogin() {
+  hide('app'); show('login-screen');
+  setTimeout(() => document.getElementById('pseudo-input').focus(), 50);
+}
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter' && !document.getElementById('login-screen').classList.contains('hidden'))
+    doLogin();
+});
+
+async function doLogin() {
+  const pseudo = document.getElementById('pseudo-input').value.trim();
+  if (!pseudo) return showLoginError('Entre un prénom ou pseudo.');
+  const r = await api('POST', BASE + '/api/login', { pseudo });
+  if (!r) return showLoginError('Erreur — réessaie.');
+  state.user = r.user;
+  showApp();
+  await refreshStats();
+  await loadQuestion();
+}
+
+function showLoginError(msg) {
+  const el = document.getElementById('login-error');
+  el.textContent = msg; el.classList.remove('hidden');
+}
+
+function showApp() {
+  hide('login-screen');
+  document.getElementById('app').classList.remove('hidden');
+  document.getElementById('user-name').textContent = state.user;
+}
+
+async function changeUser() {
+  await api('POST', BASE + '/api/logout');
+  state.user = null;
+  document.getElementById('pseudo-input').value = '';
+  hide('login-error');
+  showLogin();
+}
+
+async function refreshStats() {
+  const s = await api('GET', BASE + '/api/stats');
+  if (s) updateHeaderStats(s);
+}
+
+async function loadQuestion() {
+  setPhase('idle');
+  const data = await api('GET', BASE + '/api/question');
+  if (!data) return;
+  if (data.done) { setPhase('done'); return; }
+  if (!data.id)  { setPhase('empty'); return; }
+
+  state.question = data;
+
+  const niveauLabels = { 1: 'Débutant', 2: 'Intermédiaire', 3: 'Avancé' };
+  const badge = document.getElementById('q-badge');
+  badge.textContent = niveauLabels[data.niveau] || `N${data.niveau}`;
+  badge.className = `badge badge-${data.niveau}`;
+
+  const eb = document.getElementById('q-etat-badge');
+  const labels = {
+    a_retravailler: '↩ À revoir',
+    a_reconfirmer_1: '🔄 Confirmer ×2',
+    a_reconfirmer_2: '🔄 Confirmer ×1'
+  };
+  if (data.etat && data.etat !== 'non_vue') {
+    eb.textContent = labels[data.etat] || data.etat;
+    eb.className = `etat-badge etat-${data.etat}`;
+    eb.classList.remove('hidden');
+  } else { eb.classList.add('hidden'); }
+
+  document.getElementById('q-id').textContent = data.id;
+  document.getElementById('q-text').textContent = data.question;
+  document.getElementById('user-answer').value = '';
+  hide('reference-card'); hide('result-feedback');
+  setPhase('question');
+}
+
+async function revealAnswer() {
+  const d = await api('GET', BASE + '/api/question/' + state.question.id + '/details');
+  if (!d) return;
+
+  document.getElementById('ref-text').textContent = d.reponse_reference;
+
+  // Sépare la première partie (kanji + tiret) du reste (contexte)
+  const expl = d.explication || '';
+  const dashIdx = expl.indexOf('—');
+  if (dashIdx > -1) {
+    const kanjiPart   = expl.substring(0, dashIdx).trim();
+    const contextPart = expl.substring(dashIdx + 1).trim();
+    document.getElementById('expl-text').innerHTML =
+      `<span style="font-size:1.1rem;font-weight:700;">${kanjiPart}</span><br>
+       <span style="font-size:.9rem;color:#555;">${contextPart}</span>`;
+  } else {
+    document.getElementById('expl-text').textContent = expl;
+  }
+
+  // Tags
+  const tagsRow = document.getElementById('tags-row');
+  tagsRow.innerHTML = '';
+  try {
+    const tags = JSON.parse(d.tags || '[]');
+    tags.forEach(t => {
+      const chip = document.createElement('span');
+      chip.className = 'tag-chip';
+      chip.textContent = t;
+      tagsRow.appendChild(chip);
+    });
+  } catch(e) {}
+
+  show('reference-card'); hide('result-feedback');
+  setPhase('revealed');
+}
+
+async function submitAnswer(correct) {
+  const result = await api('POST', BASE + '/api/answer',
+    { questionId: state.question.id, correct });
+  if (!result) return;
+
+  const fb = document.getElementById('result-feedback');
+  fb.textContent = correct
+    ? '✓ Noté — expression maîtrisée progressivement'
+    : '✗ Noté — reviendra bientôt pour renforcement';
+  fb.className = `result-feedback ${correct ? 'result-correct' : 'result-wrong'}`;
+  show('result-feedback');
+  updateHeaderStats(result.stats);
+  updateProgress(result.stats);
+
+  if (result.showBilan) showBilan(result.compteur, result.stats);
+  else setTimeout(loadQuestion, 450);
+}
+
+function updateProgress(s) {
+  const total = s.total || 100;
+  const pct = Math.round((s.maitrisee / total) * 100);
+  document.getElementById('progress-bar').style.width = pct + '%';
+  show('progress-wrap');
+}
+
+function showBilan(compteur, s) {
+  document.getElementById('bilan-titre').textContent = `📊 Bilan — Q.${compteur}`;
+  document.getElementById('b-maitrisee').textContent    = s.maitrisee;
+  document.getElementById('b-reconfirmer').textContent  = s.a_reconfirmer;
+  document.getElementById('b-retravailler').textContent = s.a_retravailler;
+  document.getElementById('b-nonvue').textContent       = s.non_vue;
+  show('bilan-modal');
+}
+function closeBilan() { hide('bilan-modal'); loadQuestion(); }
+
+async function confirmReset() {
+  if (!confirm(`Réinitialiser la progression de ${state.user} ?\nToutes les expressions repasseront à \"non vues\".`)) return;
+  const r = await api('POST', BASE + '/api/reset');
+  if (r?.success) { await refreshStats(); await loadQuestion(); }
+}
+
+function setPhase(phase) {
+  ['empty-state','done-state','question-card','answer-section','reference-card']
+    .forEach(id => hide(id));
+  if (phase === 'empty')    show('empty-state');
+  else if (phase === 'done')     show('done-state');
+  else if (phase === 'question') { show('question-card'); show('answer-section'); }
+  else if (phase === 'revealed') { show('question-card'); show('answer-section'); show('reference-card'); }
+}
+
+function updateHeaderStats(s) {
+  document.getElementById('s-maitrisee').textContent    = s.maitrisee;
+  document.getElementById('s-reconfirmer').textContent  = s.a_reconfirmer;
+  document.getElementById('s-retravailler').textContent = s.a_retravailler;
+  document.getElementById('s-nonvue').textContent       = s.non_vue;
+}
+function show(id) { document.getElementById(id).classList.remove('hidden'); }
+function hide(id) { document.getElementById(id).classList.add('hidden'); }
+
+async function api(method, url, body) {
+  try {
+    const opts = { method, headers: { 'Content-Type': 'application/json' } };
+    if (body) opts.body = JSON.stringify(body);
+    const res = await fetch(url, opts);
+    if (res.status === 401) return null;
+    const data = await res.json();
+    if (data.error) { console.error('API:', data.error); return null; }
+    return data;
+  } catch(e) { console.error('Fetch:', e); return null; }
+}
+</script>
+</body>
+</html>
