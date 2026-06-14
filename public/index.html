@@ -15,7 +15,7 @@
   body { font-family: var(--font); background: var(--bg); color: var(--text);
     min-height: 100vh; display: flex; flex-direction: column; }
 
-  /* ── ÉCRAN PSEUDO ── */
+  /* ── LOGIN ── */
   #login-screen {
     flex: 1; display: flex; align-items: center; justify-content: center;
     background: linear-gradient(135deg, #b5001e 0%, #7a0015 100%);
@@ -36,8 +36,7 @@
   .login-input:focus { outline: 2px solid var(--accent); border-color: transparent; }
   .btn-login {
     width: 100%; padding: 12px; background: var(--accent); color: #fff;
-    border: none; border-radius: 8px; font-size: 1rem; font-weight: 700;
-    cursor: pointer; letter-spacing: .03em;
+    border: none; border-radius: 8px; font-size: 1rem; font-weight: 700; cursor: pointer;
   }
   .btn-login:hover { opacity: .88; }
   .login-error { color: var(--wrong); font-size: .85rem; margin-top: 10px; }
@@ -53,10 +52,8 @@
     border: 1px solid rgba(255,255,255,.3); border-radius: 20px;
     padding: 3px 12px; display: flex; align-items: center; gap: 8px;
   }
-  #user-badge button {
-    background: none; border: none; color: rgba(255,255,255,.7);
-    cursor: pointer; font-size: .75rem; padding: 0;
-  }
+  #user-badge button { background: none; border: none; color: rgba(255,255,255,.7);
+    cursor: pointer; font-size: .75rem; padding: 0; }
   #user-badge button:hover { color: #fff; }
   #stats-bar { display: flex; gap: 14px; font-size: .82rem; flex-wrap: wrap; }
   .stat { display: flex; align-items: center; gap: 4px; opacity: .9; }
@@ -67,11 +64,42 @@
   .btn-header:hover { background: rgba(255,255,255,.25); }
   .header-actions { display: flex; gap: 8px; flex-shrink: 0; }
 
+  /* ── FILTER BAR ── */
+  #filter-bar {
+    background: var(--surface); border-bottom: 1px solid var(--border);
+    padding: 10px 20px; display: flex; align-items: flex-start; gap: 16px;
+    flex-wrap: wrap;
+  }
+  .filter-group { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .filter-label { font-size: .72rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: .08em; color: var(--muted); white-space: nowrap; }
+  .filter-chip {
+    font-size: .78rem; padding: 4px 12px; border-radius: 20px; cursor: pointer;
+    border: 1.5px solid var(--border); background: var(--bg); color: #555;
+    font-family: var(--font); transition: all .15s; font-weight: 500;
+  }
+  .filter-chip:hover { border-color: var(--accent); color: var(--accent); }
+  .filter-chip.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .filter-chip.niveau-1.active { background: var(--badge1); border-color: var(--badge1); }
+  .filter-chip.niveau-2.active { background: var(--badge2); border-color: var(--badge2); }
+  .filter-chip.niveau-3.active { background: var(--badge3); border-color: var(--badge3); }
+  .filter-divider { width: 1px; height: 28px; background: var(--border); flex-shrink: 0; }
+  .filter-clear { font-size: .75rem; color: var(--muted); cursor: pointer;
+    text-decoration: underline; border: none; background: none; padding: 0;
+    font-family: var(--font); }
+  .filter-clear:hover { color: var(--accent); }
+  #filter-summary {
+    font-size: .78rem; color: var(--accent); font-weight: 600;
+    padding: 2px 10px; background: #fdf0f0; border-radius: 20px;
+    border: 1px solid #f0c0c0;
+  }
+
   /* ── MAIN ── */
   main { flex: 1; max-width: 760px; width: 100%; margin: 0 auto; padding: 24px 16px; }
   .card { background: var(--surface); border: 1px solid var(--border);
     border-radius: 10px; padding: 24px; margin-bottom: 16px;
     box-shadow: 0 1px 4px rgba(0,0,0,.05); }
+
   .question-meta { display: flex; align-items: center; gap: 10px;
     margin-bottom: 18px; flex-wrap: wrap; }
   .badge { display: inline-block; padding: 4px 12px; border-radius: 20px;
@@ -79,22 +107,21 @@
   .badge-1 { background: var(--badge1); }
   .badge-2 { background: var(--badge2); }
   .badge-3 { background: var(--badge3); }
-  .badge-label-1::before { content: 'Débutant'; }
-  .badge-label-2::before { content: 'Intermédiaire'; }
-  .badge-label-3::before { content: 'Avancé'; }
   .etat-badge { font-size: .72rem; padding: 2px 8px; border-radius: 20px;
     font-weight: 600; color: #fff; }
-  .etat-a_retravailler  { background: var(--wrong); }
+  .etat-a_retravailler { background: var(--wrong); }
   .etat-a_reconfirmer_1, .etat-a_reconfirmer_2 { background: var(--reconfirm); }
   .question-id { font-size: .75rem; color: var(--muted); margin-left: auto; }
+
   .question-text { font-size: 1.2rem; line-height: 1.6; font-weight: 600; }
-  .question-hint { font-size: .85rem; color: var(--muted); margin-top: 8px;
-    font-style: italic; }
+  .question-hint { font-size: .85rem; color: var(--muted); margin-top: 8px; font-style: italic; }
+
   .answer-area { width: 100%; min-height: 70px; padding: 10px 14px;
     border: 1.5px solid var(--border); border-radius: 8px; font-family: var(--font);
     font-size: 1rem; resize: vertical; margin-bottom: 12px; background: #fafaf8; }
   .answer-area:focus { outline: 2px solid var(--accent); border-color: transparent; }
   .answer-area::placeholder { color: #ccc; }
+
   .btn { display: inline-flex; align-items: center; gap: 6px; padding: 11px 20px;
     border-radius: 8px; border: none; cursor: pointer; font-size: .95rem;
     font-weight: 600; transition: opacity .15s; }
@@ -105,7 +132,6 @@
   .btn-correct:hover, .btn-wrong:hover { opacity: .88; }
   .eval-row { display: flex; gap: 12px; margin-top: 16px; }
 
-  /* ── CARTE RÉPONSE ── */
   .answer-card { background: #fdf9f0; border-left: 4px solid var(--accent);
     border-radius: 0 10px 10px 0; padding: 18px 20px; margin-top: 16px; }
   .answer-card-label { font-size: .72rem; text-transform: uppercase;
@@ -114,9 +140,6 @@
     margin-bottom: 14px; letter-spacing: .02em; }
   .answer-expl-label { font-size: .72rem; text-transform: uppercase;
     letter-spacing: .1em; color: var(--muted); margin-bottom: 4px; font-weight: 600; }
-  .answer-kanji { font-size: 1.05rem; margin-bottom: 6px; line-height: 1.6;
-    color: #333; }
-  .answer-context { font-size: .88rem; color: #555; line-height: 1.6; }
   .answer-tags { margin-top: 10px; display: flex; gap: 6px; flex-wrap: wrap; }
   .tag-chip { font-size: .72rem; padding: 2px 10px; border-radius: 20px;
     background: #f0ede8; color: #666; font-weight: 500; }
@@ -145,23 +168,23 @@
     font-size: .9rem; font-weight: 600; }
   .result-correct { background: #e8f5e8; color: var(--correct); }
   .result-wrong   { background: #fae8e8; color: var(--wrong); }
-  .hidden { display: none !important; }
 
-  /* ── PROGRESS BAR ── */
   .progress-wrap { background: #e8e4df; height: 4px; width: 100%; margin-bottom: 20px;
     border-radius: 2px; overflow: hidden; }
   .progress-bar { height: 100%; background: var(--accent); border-radius: 2px;
     transition: width .4s ease; }
+
+  .hidden { display: none !important; }
 </style>
 </head>
 <body>
 
-<!-- ── ÉCRAN PSEUDO ── -->
+<!-- ── LOGIN ── -->
 <div id="login-screen" class="hidden">
   <div class="login-box">
     <div class="login-logo">🇯🇵</div>
     <h1>Japonais Touriste</h1>
-    <p>100 expressions essentielles pour voyager au Japon.<br>Ta progression est sauvegardée.</p>
+    <p>115 expressions essentielles pour voyager au Japon.<br>Ta progression est sauvegardée.</p>
     <input id="pseudo-input" class="login-input" type="text"
       placeholder="Ton prénom ou pseudo" maxlength="32" autocomplete="off">
     <button class="btn-login" onclick="doLogin()">Commencer →</button>
@@ -191,19 +214,38 @@
   </div>
 </header>
 
+<!-- ── FILTER BAR ── -->
+<div id="filter-bar" class="hidden">
+  <div class="filter-group">
+    <span class="filter-label">Niveau</span>
+    <button class="filter-chip niveau-1" data-type="niveau" data-val="1" onclick="toggleFilter(this)">Débutant</button>
+    <button class="filter-chip niveau-2" data-type="niveau" data-val="2" onclick="toggleFilter(this)">Intermédiaire</button>
+    <button class="filter-chip niveau-3" data-type="niveau" data-val="3" onclick="toggleFilter(this)">Avancé</button>
+  </div>
+  <div class="filter-divider"></div>
+  <div class="filter-group">
+    <span class="filter-label">Thème</span>
+    <div id="tag-chips"></div>
+  </div>
+  <div class="filter-divider"></div>
+  <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+    <span id="filter-summary" class="hidden"></span>
+    <button class="filter-clear" onclick="clearFilters()">Tout voir</button>
+  </div>
+</div>
+
 <main>
   <div id="progress-wrap" class="progress-wrap hidden">
     <div id="progress-bar" class="progress-bar" style="width:0%"></div>
   </div>
 
   <div id="empty-state" class="empty-state hidden">
-    <h2>Aucune question chargée</h2>
-    <p>Erreur de chargement des questions.</p>
+    <h2>Aucune question pour ce filtre</h2>
+    <p>Essaie un autre thème ou niveau, ou clique sur <strong>Tout voir</strong>.</p>
   </div>
-
   <div id="done-state" class="empty-state hidden">
     <h2>🏆 Félicitations !</h2>
-    <p>Tu as maîtrisé toutes les expressions disponibles.<br>
+    <p>Tu as maîtrisé toutes les expressions de cette sélection.<br>
     Tu es prêt(e) pour le Japon !</p>
   </div>
 
@@ -228,7 +270,7 @@
       <div class="answer-card-label">Prononciation (romaji)</div>
       <div id="ref-text" class="answer-romaji"></div>
       <div class="answer-expl-label">Écriture japonaise &amp; notes</div>
-      <div id="expl-text" class="answer-kanji"></div>
+      <div id="expl-text"></div>
       <div id="tags-row" class="answer-tags"></div>
     </div>
     <div class="eval-row">
@@ -242,7 +284,7 @@
 
 </div><!-- #app -->
 
-<!-- ── BILAN MODAL ── -->
+<!-- ── BILAN ── -->
 <div id="bilan-modal" class="modal-overlay hidden">
   <div class="modal">
     <h2 id="bilan-titre">📊 Bilan</h2>
@@ -268,22 +310,134 @@
 const BASE = '{{BASE}}';
 const state = { phase: 'idle', question: null, user: null };
 
-(async function init() {
-  const me = await api('GET', BASE + '/api/me');
-  if (!me) {
-    showLogin();
-  } else {
-    state.user = me.user;
-    showApp();
-    await refreshStats();
-    await loadQuestion();
+// Filtres : persistés dans localStorage
+const filters = {
+  niveaux: new Set(),
+  tags: new Set()
+};
+
+function loadFiltersFromStorage() {
+  try {
+    const saved = JSON.parse(localStorage.getItem('jp_filters') || '{}');
+    if (saved.niveaux) saved.niveaux.forEach(n => filters.niveaux.add(n));
+    if (saved.tags) saved.tags.forEach(t => filters.tags.add(t));
+  } catch(e) {}
+}
+
+function saveFiltersToStorage() {
+  localStorage.setItem('jp_filters', JSON.stringify({
+    niveaux: [...filters.niveaux],
+    tags: [...filters.tags]
+  }));
+}
+
+function filtersToQuery() {
+  const params = new URLSearchParams();
+  if (filters.niveaux.size) params.set('niveaux', [...filters.niveaux].join(','));
+  if (filters.tags.size)    params.set('tags',    [...filters.tags].join(','));
+  return params.toString() ? '?' + params.toString() : '';
+}
+
+function updateFilterSummary() {
+  const total = filters.niveaux.size + filters.tags.size;
+  const el = document.getElementById('filter-summary');
+  if (total === 0) { el.classList.add('hidden'); return; }
+  const parts = [];
+  if (filters.niveaux.size) {
+    const labels = {1:'Débutant',2:'Intermédiaire',3:'Avancé'};
+    parts.push([...filters.niveaux].sort().map(n => labels[n]).join(', '));
   }
+  if (filters.tags.size) parts.push([...filters.tags].join(', '));
+  el.textContent = '🔎 ' + parts.join(' · ');
+  el.classList.remove('hidden');
+}
+
+function toggleFilter(btn) {
+  const type = btn.dataset.type;
+  const val  = type === 'niveau' ? Number(btn.dataset.val) : btn.dataset.val;
+  const set  = type === 'niveau' ? filters.niveaux : filters.tags;
+  if (set.has(val)) { set.delete(val); btn.classList.remove('active'); }
+  else              { set.add(val);    btn.classList.add('active'); }
+  saveFiltersToStorage();
+  updateFilterSummary();
+  refreshStats();
+  loadQuestion();
+}
+
+function clearFilters() {
+  filters.niveaux.clear(); filters.tags.clear();
+  document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+  saveFiltersToStorage();
+  updateFilterSummary();
+  refreshStats();
+  loadQuestion();
+}
+
+function applyStoredFiltersToUI() {
+  filters.niveaux.forEach(n => {
+    const btn = document.querySelector(`.filter-chip[data-type="niveau"][data-val="${n}"]`);
+    if (btn) btn.classList.add('active');
+  });
+  filters.tags.forEach(t => {
+    const btn = document.querySelector(`.filter-chip[data-type="tag"][data-val="${t}"]`);
+    if (btn) btn.classList.add('active');
+  });
+  updateFilterSummary();
+}
+
+// ── Init ──────────────────────────────────────────────────────────────────────
+(async function init() {
+  loadFiltersFromStorage();
+  const me = await api('GET', BASE + '/api/me');
+  if (!me) { showLogin(); return; }
+  state.user = me.user;
+  showApp();
+  await loadTagChips();
+  applyStoredFiltersToUI();
+  await refreshStats();
+  await loadQuestion();
 })();
 
-function showLogin() {
-  hide('app'); show('login-screen');
-  setTimeout(() => document.getElementById('pseudo-input').focus(), 50);
+async function loadTagChips() {
+  const data = await api('GET', BASE + '/api/tags');
+  if (!data) return;
+  const tagLabels = {
+    'appréciation': '😍 appréciation',
+    'argent': '💴 argent',
+    'basique': '🔤 basique',
+    'chiffres': '🔢 chiffres',
+    'conversation': '💬 conversation',
+    'culture': '🏯 culture',
+    'hôtel': '🏨 hôtel',
+    'navigation': '🗺 navigation',
+    'politesse': '🙏 politesse',
+    'restaurant': '🍜 restaurant',
+    'salutation': '👋 salutation',
+    'shopping': '🛍 shopping',
+    'survie': '🆘 survie',
+    'transport': '🚄 transport',
+    'urgence': '🚨 urgence',
+    'visite': '⛩ visite',
+  };
+  const container = document.getElementById('tag-chips');
+  container.style.display = 'flex';
+  container.style.flexWrap = 'wrap';
+  container.style.gap = '6px';
+  data.tags.forEach(tag => {
+    const btn = document.createElement('button');
+    btn.className = 'filter-chip';
+    btn.dataset.type = 'tag';
+    btn.dataset.val = tag;
+    btn.textContent = tagLabels[tag] || tag;
+    btn.onclick = () => toggleFilter(btn);
+    container.appendChild(btn);
+  });
+  show('filter-bar');
 }
+
+// ── Login ─────────────────────────────────────────────────────────────────────
+function showLogin() { hide('app'); show('login-screen');
+  setTimeout(() => document.getElementById('pseudo-input').focus(), 50); }
 
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Enter' && !document.getElementById('login-screen').classList.contains('hidden'))
@@ -297,6 +451,8 @@ async function doLogin() {
   if (!r) return showLoginError('Erreur — réessaie.');
   state.user = r.user;
   showApp();
+  await loadTagChips();
+  applyStoredFiltersToUI();
   await refreshStats();
   await loadQuestion();
 }
@@ -320,31 +476,29 @@ async function changeUser() {
   showLogin();
 }
 
+// ── Stats ─────────────────────────────────────────────────────────────────────
 async function refreshStats() {
-  const s = await api('GET', BASE + '/api/stats');
-  if (s) updateHeaderStats(s);
+  const s = await api('GET', BASE + '/api/stats' + filtersToQuery());
+  if (s) { updateHeaderStats(s); updateProgress(s); }
 }
 
+// ── Question ──────────────────────────────────────────────────────────────────
 async function loadQuestion() {
   setPhase('idle');
-  const data = await api('GET', BASE + '/api/question');
+  const data = await api('GET', BASE + '/api/question' + filtersToQuery());
   if (!data) return;
   if (data.done) { setPhase('done'); return; }
   if (!data.id)  { setPhase('empty'); return; }
 
   state.question = data;
-
-  const niveauLabels = { 1: 'Débutant', 2: 'Intermédiaire', 3: 'Avancé' };
+  const niveauLabels = {1:'Débutant',2:'Intermédiaire',3:'Avancé'};
   const badge = document.getElementById('q-badge');
   badge.textContent = niveauLabels[data.niveau] || `N${data.niveau}`;
   badge.className = `badge badge-${data.niveau}`;
 
   const eb = document.getElementById('q-etat-badge');
-  const labels = {
-    a_retravailler: '↩ À revoir',
-    a_reconfirmer_1: '🔄 Confirmer ×2',
-    a_reconfirmer_2: '🔄 Confirmer ×1'
-  };
+  const labels = { a_retravailler:'↩ À revoir',
+    a_reconfirmer_1:'🔄 Confirmer ×2', a_reconfirmer_2:'🔄 Confirmer ×1' };
   if (data.etat && data.etat !== 'non_vue') {
     eb.textContent = labels[data.etat] || data.etat;
     eb.className = `etat-badge etat-${data.etat}`;
@@ -361,31 +515,26 @@ async function loadQuestion() {
 async function revealAnswer() {
   const d = await api('GET', BASE + '/api/question/' + state.question.id + '/details');
   if (!d) return;
-
   document.getElementById('ref-text').textContent = d.reponse_reference;
 
-  // Sépare la première partie (kanji + tiret) du reste (contexte)
   const expl = d.explication || '';
   const dashIdx = expl.indexOf('—');
   if (dashIdx > -1) {
-    const kanjiPart   = expl.substring(0, dashIdx).trim();
-    const contextPart = expl.substring(dashIdx + 1).trim();
+    const kanji   = expl.substring(0, dashIdx).trim();
+    const context = expl.substring(dashIdx + 1).trim();
     document.getElementById('expl-text').innerHTML =
-      `<span style="font-size:1.1rem;font-weight:700;">${kanjiPart}</span><br>
-       <span style="font-size:.9rem;color:#555;">${contextPart}</span>`;
+      `<span style="font-size:1.05rem;font-weight:700;">${kanji}</span><br>
+       <span style="font-size:.9rem;color:#555;line-height:1.6;">${context}</span>`;
   } else {
     document.getElementById('expl-text').textContent = expl;
   }
 
-  // Tags
   const tagsRow = document.getElementById('tags-row');
   tagsRow.innerHTML = '';
   try {
-    const tags = JSON.parse(d.tags || '[]');
-    tags.forEach(t => {
+    JSON.parse(d.tags || '[]').forEach(t => {
       const chip = document.createElement('span');
-      chip.className = 'tag-chip';
-      chip.textContent = t;
+      chip.className = 'tag-chip'; chip.textContent = t;
       tagsRow.appendChild(chip);
     });
   } catch(e) {}
@@ -398,7 +547,6 @@ async function submitAnswer(correct) {
   const result = await api('POST', BASE + '/api/answer',
     { questionId: state.question.id, correct });
   if (!result) return;
-
   const fb = document.getElementById('result-feedback');
   fb.textContent = correct
     ? '✓ Noté — expression maîtrisée progressivement'
@@ -407,18 +555,11 @@ async function submitAnswer(correct) {
   show('result-feedback');
   updateHeaderStats(result.stats);
   updateProgress(result.stats);
-
   if (result.showBilan) showBilan(result.compteur, result.stats);
   else setTimeout(loadQuestion, 450);
 }
 
-function updateProgress(s) {
-  const total = s.total || 100;
-  const pct = Math.round((s.maitrisee / total) * 100);
-  document.getElementById('progress-bar').style.width = pct + '%';
-  show('progress-wrap');
-}
-
+// ── Bilan ─────────────────────────────────────────────────────────────────────
 function showBilan(compteur, s) {
   document.getElementById('bilan-titre').textContent = `📊 Bilan — Q.${compteur}`;
   document.getElementById('b-maitrisee').textContent    = s.maitrisee;
@@ -429,12 +570,14 @@ function showBilan(compteur, s) {
 }
 function closeBilan() { hide('bilan-modal'); loadQuestion(); }
 
+// ── Admin ─────────────────────────────────────────────────────────────────────
 async function confirmReset() {
-  if (!confirm(`Réinitialiser la progression de ${state.user} ?\nToutes les expressions repasseront à \"non vues\".`)) return;
+  if (!confirm(`Réinitialiser toute la progression de ${state.user} ?`)) return;
   const r = await api('POST', BASE + '/api/reset');
   if (r?.success) { await refreshStats(); await loadQuestion(); }
 }
 
+// ── Helpers ───────────────────────────────────────────────────────────────────
 function setPhase(phase) {
   ['empty-state','done-state','question-card','answer-section','reference-card']
     .forEach(id => hide(id));
@@ -444,12 +587,20 @@ function setPhase(phase) {
   else if (phase === 'revealed') { show('question-card'); show('answer-section'); show('reference-card'); }
 }
 
+function updateProgress(s) {
+  const total = s.total || 1;
+  const pct = Math.round((s.maitrisee / total) * 100);
+  document.getElementById('progress-bar').style.width = pct + '%';
+  show('progress-wrap');
+}
+
 function updateHeaderStats(s) {
   document.getElementById('s-maitrisee').textContent    = s.maitrisee;
   document.getElementById('s-reconfirmer').textContent  = s.a_reconfirmer;
   document.getElementById('s-retravailler').textContent = s.a_retravailler;
   document.getElementById('s-nonvue').textContent       = s.non_vue;
 }
+
 function show(id) { document.getElementById(id).classList.remove('hidden'); }
 function hide(id) { document.getElementById(id).classList.add('hidden'); }
 

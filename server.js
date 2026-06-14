@@ -25,6 +25,12 @@ function requireUser(req, res, next) {
   next();
 }
 
+function parseFilters(query) {
+  const tags = query.tags ? query.tags.split(',').filter(Boolean) : [];
+  const niveaux = query.niveaux ? query.niveaux.split(',').map(Number).filter(Boolean) : [];
+  return { tags, niveaux };
+}
+
 function serveApp(res) {
   const html = fs.readFileSync(path.join(__dirname, 'public', 'index.html'), 'utf8');
   res.type('html').send(html.replace(/\{\{BASE\}\}/g, BASE));
@@ -55,10 +61,19 @@ app.get(BASE + '/api/me', (req, res) => {
   res.json({ user });
 });
 
+app.get(BASE + '/api/tags', requireUser, (req, res) => {
+  const rows = db.prepare('SELECT DISTINCT tags FROM questions').all();
+  const tagSet = new Set();
+  for (const row of rows) {
+    try { JSON.parse(row.tags).forEach(t => tagSet.add(t)); } catch(e) {}
+  }
+  res.json({ tags: [...tagSet].sort() });
+});
+
 app.post(BASE + '/api/import', requireUser, (req, res) => {
   try {
     const jsonPath = process.env.QUESTIONS_PATH
-      || path.join(__dirname, 'jp_questions.json');
+      || path.join(__dirname, 'data', 'jp_questions.json');
     if (!fs.existsSync(jsonPath))
       return res.status(404).json({ error: `Fichier introuvable : ${jsonPath}` });
     const questions = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
@@ -76,7 +91,8 @@ app.post(BASE + '/api/import', requireUser, (req, res) => {
 });
 
 app.get(BASE + '/api/question', requireUser, (req, res) => {
-  const q = srs.getNextQuestion(req.user);
+  const filters = parseFilters(req.query);
+  const q = srs.getNextQuestion(req.user, filters);
   if (!q) return res.json({ done: true });
   res.json(q);
 });
@@ -95,7 +111,8 @@ app.post(BASE + '/api/answer', requireUser, (req, res) => {
 });
 
 app.get(BASE + '/api/stats', requireUser, (req, res) => {
-  res.json(srs.getStats(req.user));
+  const filters = parseFilters(req.query);
+  res.json(srs.getStats(req.user, undefined, filters));
 });
 
 app.post(BASE + '/api/reset', requireUser, (req, res) => {

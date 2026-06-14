@@ -10,34 +10,73 @@ function getSession(user) {
 }
 
 function ensureSRS(user) {
-  // Initialise les entrées SRS manquantes pour cet utilisateur
   db.prepare(`
     INSERT OR IGNORE INTO srs (user, question_id)
     SELECT ?, id FROM questions
   `).run(user);
 }
 
-function getNextQuestion(user) {
+function buildFilters(filters = {}) {
+  const { tags = [], niveaux = [] } = filters;
+  const clauses = [];
+  const params = [];
+
+  if (tags.length > 0) {
+    const tagClauses = tags.map(() => "q.tags LIKE ?").join(' OR ');
+    clauses.push(`(${tagClauses})`);
+    tags.forEach(t => params.push(`%"${t}"%`));
+  }
+
+  if (niveaux.length > 0) {
+    clauses.push(`q.niveau IN (${niveaux.map(() => '?').join(',')})`);
+    niveaux.forEach(n => params.push(n));
+  }
+
+  return {
+    sql: clauses.length ? ' AND ' + clauses.join(' AND ') : '',
+    params
+  };
+}
+
+function getNextQuestion(user, filters = {}) {
   ensureSRS(user);
   const session = getSession(user);
   const compteur = session.compteur;
+  const f = buildFilters(filters);
 
   let row = db.prepare(`
     SELECT q.id, q.niveau, q.tags, q.question, s.etat
     FROM questions q JOIN srs s ON q.id = s.question_id
     WHERE s.user = ? AND s.etat = 'a_retravailler' AND s.prochain_affichage <= ?
+    ${f.sql}
     ORDER BY s.prochain_affichage ASC LIMIT 1
-  `).get(user, compteur);
+  `).get(user, compteur, ...f.params);
   if (row) return row;
 
   row = db.prepare(`
     SELECT q.id, q.niveau, q.tags, q.question, s.etat
     FROM questions q JOIN srs s ON q.id = s.question_id
     WHERE s.user = ? AND s.etat IN ('a_reconfirmer_1','a_reconfirmer_2') AND s.prochain_affichage <= ?
+    ${f.sql}
     ORDER BY s.prochain_affichage ASC LIMIT 1
-  `).get(user, compteur);
+  `).get(user, compteur, ...f.params);
   if (row) return row;
 
+  // Avec filtres actifs : pas de logique de déblocage par niveau (on sert tous les niveaux filtrés)
+  const hasFilter = f.sql !== '';
+
+  if (hasFilter) {
+    row = db.prepare(`
+      SELECT q.id, q.niveau, q.tags, q.question, s.etat
+      FROM questions q JOIN srs s ON q.id = s.question_id
+      WHERE s.user = ? AND s.etat = 'non_vue'
+      ${f.sql}
+      ORDER BY q.niveau ASC, RANDOM() LIMIT 1
+    `).get(user, ...f.params);
+    return row || null;
+  }
+
+  // Sans filtre : logique de déblocage progressif par niveau
   const l2Vues = db.prepare(`
     SELECT COUNT(*) AS c FROM srs s JOIN questions q ON s.question_id = q.id
     WHERE s.user = ? AND q.niveau = 2 AND s.etat != 'non_vue'
@@ -109,11 +148,16 @@ function recordAnswer(user, questionId, correct) {
   };
 }
 
-function getStats(user, compteur) {
-  const rows = db.prepare(
-    'SELECT etat, COUNT(*) AS c FROM srs WHERE user=? GROUP BY etat'
-  ).all(user);
-  const result = { maitrisee:0, a_reconfirmer:0, a_retravailler:0, non_vue:0, total:0 };
+function getStats(user, compteur, filters = {}) {
+  const f = buildFilters(filters);
+  const rows = db.prepare(`
+    SELECT s.etat, COUNT(*) AS c
+    FROM srs s JOIN questions q ON s.question_id = q.id
+    WHERE s.user = ? ${f.sql}
+    GROUP BY s.etat
+  `).all(user, ...f.params);
+
+  const result = { maitrisee: 0, a_reconfirmer: 0, a_retravailler: 0, non_vue: 0, total: 0 };
   for (const row of rows) {
     result.total += row.c;
     if (row.etat === 'maitrisee') result.maitrisee += row.c;
