@@ -454,7 +454,7 @@
     "id": "Q042",
     "niveau": 2,
     "tags": [
-      "hÃ´tel"
+      "hôtel"
     ],
     "question": "J'ai une réservation au nom de [nom]",
     "reponse_reference": "[Nom] de yoyaku shite imasu",
@@ -465,7 +465,7 @@
     "id": "Q043",
     "niveau": 2,
     "tags": [
-      "hÃ´tel"
+      "hôtel"
     ],
     "question": "Le petit-déjeuner est-il inclus ?",
     "reponse_reference": "Choushoku wa tsukimasuka?",
@@ -476,7 +476,7 @@
     "id": "Q044",
     "niveau": 2,
     "tags": [
-      "hÃ´tel"
+      "hôtel"
     ],
     "question": "Ã€ quelle heure est le check-out ?",
     "reponse_reference": "Chekku-auto wa nanji desu ka?",
@@ -487,7 +487,7 @@
     "id": "Q045",
     "niveau": 2,
     "tags": [
-      "hÃ´tel"
+      "hôtel"
     ],
     "question": "Avez-vous du Wi-Fi ?",
     "reponse_reference": "Wai-fai wa arimasu ka?",
@@ -498,7 +498,7 @@
     "id": "Q046",
     "niveau": 2,
     "tags": [
-      "hÃ´tel"
+      "hôtel"
     ],
     "question": "Quel est le mot de passe Wi-Fi ?",
     "reponse_reference": "Wai-fai no pasuwaado wa nan desu ka?",
@@ -685,7 +685,7 @@
     "id": "Q063",
     "niveau": 2,
     "tags": [
-      "hÃ´tel"
+      "hôtel"
     ],
     "question": "Y a-t-il une consigne à bagages ?",
     "reponse_reference": "Nimotsu azukari wa arimasu ka?",
@@ -784,7 +784,7 @@
     "id": "Q072",
     "niveau": 3,
     "tags": [
-      "apprÃ©ciation"
+      "appréciation"
     ],
     "question": "C'est magnifique ! (pour un paysage, un bâtiment)",
     "reponse_reference": "Subarashii! / Kirei desu ne!",
@@ -971,7 +971,7 @@
     "id": "Q089",
     "niveau": 3,
     "tags": [
-      "hÃ´tel"
+      "hôtel"
     ],
     "question": "Puis-je laisser mes bagages quelques heures ?",
     "reponse_reference": "Nimotsu wo azukatte moraemasu ka?",
@@ -1048,7 +1048,7 @@
     "id": "Q096",
     "niveau": 3,
     "tags": [
-      "hÃ´tel"
+      "hôtel"
     ],
     "question": "Y a-t-il un onsen dans cet hôtel ou à proximité ?",
     "reponse_reference": "Kono hoteru ni onsen wa arimasu ka?",
@@ -1081,7 +1081,7 @@
     "id": "Q099",
     "niveau": 3,
     "tags": [
-      "apprÃ©ciation"
+      "appréciation"
     ],
     "question": "Ce voyage a été inoubliable (pour remercier un hôte ou guide en fin de séjour)",
     "reponse_reference": "Wasurenai tabi deshita",
