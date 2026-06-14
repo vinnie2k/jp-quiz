@@ -352,12 +352,28 @@ function updateFilterSummary() {
   el.classList.remove('hidden');
 }
 
+const SUPER_CATS = [
+  { key: 'bases',    label: '🗝 Bases',            tags: ['salutation','politesse','basique','survie'] },
+  { key: 'urgence',  label: '🚨 Urgences',          tags: ['urgence'] },
+  { key: 'deplacer', label: '🚄 Se déplacer',       tags: ['transport','navigation'] },
+  { key: 'manger',   label: '🍜 Manger & Shopping', tags: ['restaurant','shopping','argent','chiffres'] },
+  { key: 'culture',  label: '🏯 Culture & Séjour',  tags: ['hôtel','visite','culture','conversation','appréciation'] },
+];
+
 function toggleFilter(btn) {
   const type = btn.dataset.type;
-  const val  = type === 'niveau' ? Number(btn.dataset.val) : btn.dataset.val;
-  const set  = type === 'niveau' ? filters.niveaux : filters.tags;
-  if (set.has(val)) { set.delete(val); btn.classList.remove('active'); }
-  else              { set.add(val);    btn.classList.add('active'); }
+  if (type === 'super') {
+    const cat = SUPER_CATS.find(c => c.key === btn.dataset.val);
+    if (!cat) return;
+    const allActive = cat.tags.every(t => filters.tags.has(t));
+    if (allActive) { cat.tags.forEach(t => filters.tags.delete(t)); btn.classList.remove('active'); }
+    else           { cat.tags.forEach(t => filters.tags.add(t));    btn.classList.add('active'); }
+  } else {
+    const val = type === 'niveau' ? Number(btn.dataset.val) : btn.dataset.val;
+    const set = type === 'niveau' ? filters.niveaux : filters.tags;
+    if (set.has(val)) { set.delete(val); btn.classList.remove('active'); }
+    else              { set.add(val);    btn.classList.add('active'); }
+  }
   saveFiltersToStorage();
   updateFilterSummary();
   refreshStats();
@@ -378,9 +394,9 @@ function applyStoredFiltersToUI() {
     const btn = document.querySelector(`.filter-chip[data-type="niveau"][data-val="${n}"]`);
     if (btn) btn.classList.add('active');
   });
-  filters.tags.forEach(t => {
-    const btn = document.querySelector(`.filter-chip[data-type="tag"][data-val="${t}"]`);
-    if (btn) btn.classList.add('active');
+  SUPER_CATS.forEach(cat => {
+    const btn = document.querySelector(`.filter-chip[data-type="super"][data-val="${cat.key}"]`);
+    if (btn && cat.tags.every(t => filters.tags.has(t))) btn.classList.add('active');
   });
   updateFilterSummary();
 }
@@ -392,43 +408,23 @@ function applyStoredFiltersToUI() {
   if (!me) { showLogin(); return; }
   state.user = me.user;
   showApp();
-  await loadTagChips();
+  loadTagChips();
   applyStoredFiltersToUI();
   await refreshStats();
   await loadQuestion();
 })();
 
-async function loadTagChips() {
-  const data = await api('GET', BASE + '/api/tags');
-  if (!data) return;
-  const tagLabels = {
-    'appréciation': '😍 appréciation',
-    'argent': '💴 argent',
-    'basique': '🔤 basique',
-    'chiffres': '🔢 chiffres',
-    'conversation': '💬 conversation',
-    'culture': '🏯 culture',
-    'hôtel': '🏨 hôtel',
-    'navigation': '🗺 navigation',
-    'politesse': '🙏 politesse',
-    'restaurant': '🍜 restaurant',
-    'salutation': '👋 salutation',
-    'shopping': '🛍 shopping',
-    'survie': '🆘 survie',
-    'transport': '🚄 transport',
-    'urgence': '🚨 urgence',
-    'visite': '⛩ visite',
-  };
+function loadTagChips() {
   const container = document.getElementById('tag-chips');
   container.style.display = 'flex';
   container.style.flexWrap = 'wrap';
   container.style.gap = '6px';
-  data.tags.forEach(tag => {
+  SUPER_CATS.forEach(cat => {
     const btn = document.createElement('button');
     btn.className = 'filter-chip';
-    btn.dataset.type = 'tag';
-    btn.dataset.val = tag;
-    btn.textContent = tagLabels[tag] || tag;
+    btn.dataset.type = 'super';
+    btn.dataset.val = cat.key;
+    btn.textContent = cat.label;
     btn.onclick = () => toggleFilter(btn);
     container.appendChild(btn);
   });
@@ -451,7 +447,7 @@ async function doLogin() {
   if (!r) return showLoginError('Erreur — réessaie.');
   state.user = r.user;
   showApp();
-  await loadTagChips();
+  loadTagChips();
   applyStoredFiltersToUI();
   await refreshStats();
   await loadQuestion();
