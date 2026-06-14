@@ -1,1267 +1,1267 @@
-﻿[
-    {
-        "id":  "Q001",
-        "niveau":  1,
-        "tags":  [
-                     "politesse"
-                 ],
-        "question":  "Excusez-moi / Pardon (pour interpeller quelqu\u0027un ou s\u0027excuser lÃ©gÃ¨rement)",
-        "reponse_reference":  "Sumimasen",
-        "explication":  "ã™ã¿ã¾ã›ã‚“ â€” Formule absolument incontournable. Sert Ã  attirer l\u0027attention d\u0027un passant, s\u0027excuser de dÃ©ranger, ou mÃªme remercier un service rendu. Ã€ connaÃ®tre par cÅ“ur.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q002",
-        "niveau":  1,
-        "tags":  [
-                     "politesse"
-                 ],
-        "question":  "Merci (formule polie standard)",
-        "reponse_reference":  "Arigatou gozaimasu",
-        "explication":  "ã‚ã‚ŠãŒã¨ã†ã”ã–ã„ã¾ã™ â€” Version formelle et respectueuse. Dans un contexte dÃ©contractÃ© entre amis, on dit simplement \"Arigatou\".",
-        "source_page":  null
-    },
-    {
-        "id":  "Q003",
-        "niveau":  1,
-        "tags":  [
-                     "salutation"
-                 ],
-        "question":  "Bonjour (en journÃ©e, de 10h Ã  18h environ)",
-        "reponse_reference":  "Konnichiwa",
-        "explication":  "ã“ã‚“ã«ã¡ã¯ â€” La salutation standard de la journÃ©e. Ã‰vitez de l\u0027utiliser le matin ou le soir.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q004",
-        "niveau":  1,
-        "tags":  [
-                     "salutation"
-                 ],
-        "question":  "Bonjour (le matin, avant 10h)",
-        "reponse_reference":  "Ohayou gozaimasu",
-        "explication":  "ãŠã¯ã‚ˆã†ã”ã–ã„ã¾ã™ â€” Le matin. Version informelle : \"Ohayou\" entre amis ou collÃ¨gues proches.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q005",
-        "niveau":  1,
-        "tags":  [
-                     "salutation"
-                 ],
-        "question":  "Bonsoir (Ã  partir de la tombÃ©e de la nuit)",
-        "reponse_reference":  "Konbanwa",
-        "explication":  "ã“ã‚“ã°ã‚“ã¯ â€” Salutation du soir. Se prononce avec un \"wa\" final, pas \"ha\".",
-        "source_page":  null
-    },
-    {
-        "id":  "Q006",
-        "niveau":  1,
-        "tags":  [
-                     "salutation"
-                 ],
-        "question":  "Au revoir (sÃ©paration formelle)",
-        "reponse_reference":  "Sayounara",
-        "explication":  "ã•ã‚ˆã†ãªã‚‰ â€” Adieu assez formel. Entre amis on prÃ©fÃ¨re \"Jaa ne\" (Ã  plus) ou \"Mata ne\" (Ã  bientÃ´t).",
-        "source_page":  null
-    },
-    {
-        "id":  "Q007",
-        "niveau":  1,
-        "tags":  [
-                     "basique"
-                 ],
-        "question":  "Oui",
-        "reponse_reference":  "Hai",
-        "explication":  "ã¯ã„ â€” Oui. Aussi utilisÃ© pour signifier \"je vous entends\" ou acquiescer poliment sans forcÃ©ment Ãªtre d\u0027accord.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q008",
-        "niveau":  1,
-        "tags":  [
-                     "basique"
-                 ],
-        "question":  "Non",
-        "reponse_reference":  "Iie",
-        "explication":  "ã„ã„ãˆ â€” Non. Se prononce \"i-i-Ã©\" (deux i distincts). Les Japonais Ã©vitent souvent le refus direct.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q009",
-        "niveau":  1,
-        "tags":  [
-                     "survie"
-                 ],
-        "question":  "Je ne comprends pas",
-        "reponse_reference":  "Wakarimasen",
-        "explication":  "ã‚ã‹ã‚Šã¾ã›ã‚“ â€” Essentiel quand on ne saisit pas. Peut s\u0027accompagner d\u0027un sourire gÃªnÃ©, ce qui est tout Ã  fait normal.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q010",
-        "niveau":  1,
-        "tags":  [
-                     "survie"
-                 ],
-        "question":  "Je ne parle pas japonais",
-        "reponse_reference":  "Nihongo ga hanasemasen",
-        "explication":  "æ—¥æœ¬èªžãŒè©±ã›ã¾ã›ã‚“ â€” Utile pour prÃ©venir immÃ©diatement. \"Nihongo\" = japonais, \"hanasemasen\" = ne parle pas.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q011",
-        "niveau":  1,
-        "tags":  [
-                     "survie"
-                 ],
-        "question":  "Parlez-vous anglais ?",
-        "reponse_reference":  "Eigo ga hanasemasu ka?",
-        "explication":  "è‹±èªžãŒè©±ã›ã¾ã™ã‹ï¼Ÿ â€” \"Eigo\" = anglais. Le \"ka?\" en fin de phrase marque la question en japonais.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q012",
-        "niveau":  1,
-        "tags":  [
-                     "politesse"
-                 ],
-        "question":  "S\u0027il vous plaÃ®t (pour une demande, placÃ© en fin de phrase)",
-        "reponse_reference":  "Onegaishimasu",
-        "explication":  "ãŠé¡˜ã„ã—ã¾ã™ â€” Se place EN FIN de phrase pour une demande. Exemple : \"Kore wo onegaishimasu\" = \"Ceci, s\u0027il vous plaÃ®t\".",
-        "source_page":  null
-    },
-    {
-        "id":  "Q013",
-        "niveau":  1,
-        "tags":  [
-                     "navigation"
-                 ],
-        "question":  "OÃ¹ sont les toilettes ?",
-        "reponse_reference":  "Toire wa doko desu ka?",
-        "explication":  "ãƒˆã‚¤ãƒ¬ã¯ã©ã“ã§ã™ã‹ï¼Ÿ â€” \"Toire\" vient de l\u0027anglais \"toilet\". \"Doko\" = oÃ¹. Indispensable !",
-        "source_page":  null
-    },
-    {
-        "id":  "Q014",
-        "niveau":  1,
-        "tags":  [
-                     "restaurant"
-                 ],
-        "question":  "C\u0027est dÃ©licieux !",
-        "reponse_reference":  "Oishii!",
-        "explication":  "ãŠã„ã—ã„ï¼ â€” Compliment qui fait toujours plaisir au personnel. Version renforcÃ©e : \"Totemo oishii!\" = C\u0027est vraiment dÃ©licieux !",
-        "source_page":  null
-    },
-    {
-        "id":  "Q015",
-        "niveau":  1,
-        "tags":  [
-                     "restaurant"
-                 ],
-        "question":  "L\u0027addition, s\u0027il vous plaÃ®t",
-        "reponse_reference":  "Okaikei onegaishimasu",
-        "explication":  "ãŠä¼šè¨ˆãŠé¡˜ã„ã—ã¾ã™ â€” \"Okaikei\" = l\u0027addition/la note. On peut aussi mimer un geste d\u0027Ã©criture en l\u0027air ou croiser les index.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q016",
-        "niveau":  1,
-        "tags":  [
-                     "shopping"
-                 ],
-        "question":  "Combien Ã§a coÃ»te ?",
-        "reponse_reference":  "Ikura desu ka?",
-        "explication":  "ã„ãã‚‰ã§ã™ã‹ï¼Ÿ â€” \"Ikura\" = combien. Question fondamentale pour le shopping.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q017",
-        "niveau":  1,
-        "tags":  [
-                     "shopping"
-                 ],
-        "question":  "Je voudrais celui-ci (en montrant l\u0027objet)",
-        "reponse_reference":  "Kore wo kudasai",
-        "explication":  "ã“ã‚Œã‚’ãã ã•ã„ â€” \"Kore\" = ceci (objet proche de soi). \"Kudasai\" = donnez-moi / je voudrais. Utilisable partout.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q018",
-        "niveau":  1,
-        "tags":  [
-                     "urgence"
-                 ],
-        "question":  "Au secours !",
-        "reponse_reference":  "Tasukete!",
-        "explication":  "åŠ©ã‘ã¦ï¼ â€” Cri d\u0027urgence. Ã€ crier fort si besoin. Peut aussi s\u0027utiliser plus lÃ©gÃ¨rement pour demander de l\u0027aide.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q019",
-        "niveau":  1,
-        "tags":  [
-                     "urgence"
-                 ],
-        "question":  "Appelez une ambulance !",
-        "reponse_reference":  "Kyuukyuusha wo yonde kudasai!",
-        "explication":  "æ•‘æ€¥è»Šã‚’å‘¼ã‚“ã§ãã ã•ã„ï¼ â€” \"Kyuukyuusha\" = ambulance. Le numÃ©ro d\u0027urgence mÃ©dicale au Japon est le 119.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q020",
-        "niveau":  1,
-        "tags":  [
-                     "urgence"
-                 ],
-        "question":  "Appelez la police !",
-        "reponse_reference":  "Keisatsu wo yonde kudasai!",
-        "explication":  "è­¦å¯Ÿã‚’å‘¼ã‚“ã§ãã ã•ã„ï¼ â€” \"Keisatsu\" = police. Le numÃ©ro de la police au Japon est le 110.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q021",
-        "niveau":  1,
-        "tags":  [
-                     "survie"
-                 ],
-        "question":  "Pouvez-vous rÃ©pÃ©ter, s\u0027il vous plaÃ®t ?",
-        "reponse_reference":  "Mou ichido itte kudasai",
-        "explication":  "ã‚‚ã†ä¸€åº¦è¨€ã£ã¦ãã ã•ã„ â€” \"Mou ichido\" = encore une fois. \"Itte kudasai\" = dites-le. TrÃ¨s utile !",
-        "source_page":  null
-    },
-    {
-        "id":  "Q022",
-        "niveau":  1,
-        "tags":  [
-                     "survie"
-                 ],
-        "question":  "Pouvez-vous parler plus lentement ?",
-        "reponse_reference":  "Yukkuri hanashite kudasai",
-        "explication":  "ã‚†ã£ãã‚Šè©±ã—ã¦ãã ã•ã„ â€” \"Yukkuri\" = lentement. Les Japonais font gÃ©nÃ©ralement un effort immÃ©diat.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q023",
-        "niveau":  1,
-        "tags":  [
-                     "transport"
-                 ],
-        "question":  "Un billet pour [destination], s\u0027il vous plaÃ®t (1 ticket)",
-        "reponse_reference":  "[Destination] made ichi-mai kudasai",
-        "explication":  "[Destination]ã¾ã§ä¸€æžšãã ã•ã„ â€” \"Made\" = jusqu\u0027Ã . \"Ichi-mai\" = un billet (mai = compteur pour objets plats).",
-        "source_page":  null
-    },
-    {
-        "id":  "Q024",
-        "niveau":  1,
-        "tags":  [
-                     "transport"
-                 ],
-        "question":  "Aller simple",
-        "reponse_reference":  "Katamichi",
-        "explication":  "ç‰‡é“ â€” \"Kata\" = un sens, \"michi\" = chemin. Ã€ prÃ©ciser au guichet avec \"katamichi de\" (pour l\u0027aller simple).",
-        "source_page":  null
-    },
-    {
-        "id":  "Q025",
-        "niveau":  1,
-        "tags":  [
-                     "transport"
-                 ],
-        "question":  "Aller-retour",
-        "reponse_reference":  "Oufuku",
-        "explication":  "å¾€å¾© â€” \"Ou\" = aller, \"fuku\" = retour. Ã€ dire au guichet : \"Oufuku de\" = en aller-retour.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q026",
-        "niveau":  1,
-        "tags":  [
-                     "restaurant"
-                 ],
-        "question":  "De l\u0027eau, s\u0027il vous plaÃ®t",
-        "reponse_reference":  "Omizu onegaishimasu",
-        "explication":  "ãŠæ°´ãŠé¡˜ã„ã—ã¾ã™ â€” L\u0027eau est souvent servie gratuitement au restaurant au Japon. \"Omizu\" = eau (forme polie).",
-        "source_page":  null
-    },
-    {
-        "id":  "Q027",
-        "niveau":  1,
-        "tags":  [
-                     "urgence"
-                 ],
-        "question":  "Je suis malade",
-        "reponse_reference":  "Byouki desu",
-        "explication":  "ç—…æ°—ã§ã™ â€” \"Byouki\" = maladie. Pour Ãªtre plus prÃ©cis, pointez la zone douloureuse et dites \"Koko ga itai desu\" (j\u0027ai mal ici).",
-        "source_page":  null
-    },
-    {
-        "id":  "Q028",
-        "niveau":  1,
-        "tags":  [
-                     "urgence"
-                 ],
-        "question":  "J\u0027ai mal ici (en montrant la zone)",
-        "reponse_reference":  "Koko ga itai desu",
-        "explication":  "ã“ã“ãŒç—›ã„ã§ã™ â€” \"Koko\" = ici, \"itai\" = douloureux. Simple et universellement compris avec le geste.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q029",
-        "niveau":  1,
-        "tags":  [
-                     "navigation"
-                 ],
-        "question":  "Je me suis perdu(e)",
-        "reponse_reference":  "Mayoimashita",
-        "explication":  "è¿·ã„ã¾ã—ãŸ â€” \"Mayoimashita\" est le passÃ© de \"mayou\" (se perdre). AccompagnÃ© d\u0027une carte, Ã§a permet d\u0027obtenir de l\u0027aide facilement.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q030",
-        "niveau":  1,
-        "tags":  [
-                     "transport"
-                 ],
-        "question":  "Ã€ quelle heure part le prochain train ?",
-        "reponse_reference":  "Tsugi no densha wa nanji ni demasu ka?",
-        "explication":  "æ¬¡ã®é›»è»Šã¯ä½•æ™‚ã«å‡ºã¾ã™ã‹ï¼Ÿ â€” \"Tsugi\" = prochain, \"densha\" = train, \"nanji\" = quelle heure, \"demasu\" = partir.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q031",
-        "niveau":  1,
-        "tags":  [
-                     "shopping"
-                 ],
-        "question":  "C\u0027est trop cher",
-        "reponse_reference":  "Takai desu",
-        "explication":  "é«˜ã„ã§ã™ â€” \"Takai\" = cher (ou haut). Attention : le marchandage est rare au Japon, sauf dans certains marchÃ©s touristiques.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q032",
-        "niveau":  1,
-        "tags":  [
-                     "salutation"
-                 ],
-        "question":  "Bonne nuit (avant de dormir)",
-        "reponse_reference":  "Oyasumi nasai",
-        "explication":  "ãŠã‚„ã™ã¿ãªã•ã„ â€” Se dit avant d\u0027aller se coucher. Version informelle entre amis : \"Oyasumi\".",
-        "source_page":  null
-    },
-    {
-        "id":  "Q033",
-        "niveau":  1,
-        "tags":  [
-                     "culture"
-                 ],
-        "question":  "Formule prononcÃ©e avant de manger (l\u0027Ã©quivalent de \u0027bon appÃ©tit\u0027 cÃ´tÃ© mangeur)",
-        "reponse_reference":  "Itadakimasu",
-        "explication":  "ã„ãŸã ãã¾ã™ â€” LittÃ©ralement \"je reÃ§ois humblement\". Se dit en joignant les mains. Indispensable pour montrer qu\u0027on respecte la culture japonaise.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q034",
-        "niveau":  2,
-        "tags":  [
-                     "navigation"
-                 ],
-        "question":  "OÃ¹ se trouve la gare de [nom] ?",
-        "reponse_reference":  "[Nom]-eki wa doko desu ka?",
-        "explication":  "[åå‰]é§…ã¯ã©ã“ã§ã™ã‹ï¼Ÿ â€” \"Eki\" = gare. Ex : \"Shinjuku-eki wa doko desu ka?\" pour la gare de Shinjuku.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q035",
-        "niveau":  2,
-        "tags":  [
-                     "navigation"
-                 ],
-        "question":  "OÃ¹ se trouve l\u0027arrÃªt de bus ?",
-        "reponse_reference":  "Basu tei wa doko desu ka?",
-        "explication":  "ãƒã‚¹åœã¯ã©ã“ã§ã™ã‹ï¼Ÿ â€” \"Basu\" (bus) vient de l\u0027anglais, \"tei\" = arrÃªt/station.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q036",
-        "niveau":  2,
-        "tags":  [
-                     "navigation"
-                 ],
-        "question":  "OÃ¹ est la station de mÃ©tro la plus proche ?",
-        "reponse_reference":  "Chikatetsu no eki wa doko desu ka?",
-        "explication":  "åœ°ä¸‹é‰„ã®é§…ã¯ã©ã“ã§ã™ã‹ï¼Ÿ â€” \"Chikatetsu\" = mÃ©tro (littÃ©ralement \"chemin de fer souterrain\"). \"Eki\" = gare/station.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q037",
-        "niveau":  2,
-        "tags":  [
-                     "transport"
-                 ],
-        "question":  "Est-ce que ce train va Ã  [destination] ?",
-        "reponse_reference":  "Kono densha wa [destination] ni ikimasu ka?",
-        "explication":  "ã“ã®é›»è»Šã¯[destination]ã«è¡Œãã¾ã™ã‹ï¼Ÿ â€” \"Kono\" = ce/cet, \"ikimasu\" = aller. TrÃ¨s utile pour vÃ©rifier avant de monter.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q038",
-        "niveau":  2,
-        "tags":  [
-                     "transport"
-                 ],
-        "question":  "Combien de temps jusqu\u0027Ã  [destination] ?",
-        "reponse_reference":  "[Destination] made dono kurai kakarimasu ka?",
-        "explication":  "[Destination]ã¾ã§ã©ã®ãã‚‰ã„ã‹ã‹ã‚Šã¾ã™ã‹ï¼Ÿ â€” \"Dono kurai\" = combien, \"kakarimasu\" = Ã§a prend (du temps).",
-        "source_page":  null
-    },
-    {
-        "id":  "Q039",
-        "niveau":  2,
-        "tags":  [
-                     "transport"
-                 ],
-        "question":  "Je voudrais un taxi",
-        "reponse_reference":  "Takushii wo onegaishimasu",
-        "explication":  "ã‚¿ã‚¯ã‚·ãƒ¼ã‚’ãŠé¡˜ã„ã—ã¾ã™ â€” Les taxis japonais ont les portiÃ¨res automatiques cÃ´tÃ© passager. On ne les ouvre pas soi-mÃªme !",
-        "source_page":  null
-    },
-    {
-        "id":  "Q040",
-        "niveau":  2,
-        "tags":  [
-                     "transport"
-                 ],
-        "question":  "Amenez-moi Ã  cette adresse (en montrant le tÃ©lÃ©phone)",
-        "reponse_reference":  "Kono juusho made onegaishimasu",
-        "explication":  "ã“ã®ä½æ‰€ã¾ã§ãŠé¡˜ã„ã—ã¾ã™ â€” \"Juusho\" = adresse. Montrer l\u0027adresse Ã©crite sur votre tÃ©lÃ©phone est souvent plus efficace que de la prononcer.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q041",
-        "niveau":  2,
-        "tags":  [
-                     "transport"
-                 ],
-        "question":  "OÃ¹ est l\u0027aÃ©roport ?",
-        "reponse_reference":  "Kuukou wa doko desu ka?",
-        "explication":  "ç©ºæ¸¯ã¯ã©ã“ã§ã™ã‹ï¼Ÿ â€” \"Kuukou\" = aÃ©roport. Ã€ Tokyo : Haneda (ç¾½ç”°) pour les vols domestiques/Asie, Narita (æˆç”°) pour les vols internationaux.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q042",
-        "niveau":  2,
-        "tags":  [
-                     "hÃ´tel"
-                 ],
-        "question":  "J\u0027ai une rÃ©servation au nom de [nom]",
-        "reponse_reference":  "[Nom] de yoyaku shite imasu",
-        "explication":  "[åå‰]ã§äºˆç´„ã—ã¦ã„ã¾ã™ â€” \"Yoyaku\" = rÃ©servation. Indispensable au check-in. Avoir le nom en romaji aide.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q043",
-        "niveau":  2,
-        "tags":  [
-                     "hÃ´tel"
-                 ],
-        "question":  "Le petit-dÃ©jeuner est-il inclus ?",
-        "reponse_reference":  "Choushoku wa tsukimasuka?",
-        "explication":  "æœé£Ÿã¯ä»˜ãã¾ã™ã‹ï¼Ÿ â€” \"Choushoku\" = petit-dÃ©jeuner. Les hÃ´tels japonais proposent souvent un buffet japonais traditionnel magnifique.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q044",
-        "niveau":  2,
-        "tags":  [
-                     "hÃ´tel"
-                 ],
-        "question":  "Ã€ quelle heure est le check-out ?",
-        "reponse_reference":  "Chekku-auto wa nanji desu ka?",
-        "explication":  "ãƒã‚§ãƒƒã‚¯ã‚¢ã‚¦ãƒˆã¯ä½•æ™‚ã§ã™ã‹ï¼Ÿ â€” \"Chekku-auto\" vient de l\u0027anglais. GÃ©nÃ©ralement 11h ou 12h dans la plupart des hÃ´tels japonais.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q045",
-        "niveau":  2,
-        "tags":  [
-                     "hÃ´tel"
-                 ],
-        "question":  "Avez-vous du Wi-Fi ?",
-        "reponse_reference":  "Wai-fai wa arimasu ka?",
-        "explication":  "Wi-Fiã¯ã‚ã‚Šã¾ã™ã‹ï¼Ÿ â€” \"Arimasu ka\" = est-ce qu\u0027il y a ? / avez-vous ? Formule universelle pour vÃ©rifier la disponibilitÃ© de quelque chose.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q046",
-        "niveau":  2,
-        "tags":  [
-                     "hÃ´tel"
-                 ],
-        "question":  "Quel est le mot de passe Wi-Fi ?",
-        "reponse_reference":  "Wai-fai no pasuwaado wa nan desu ka?",
-        "explication":  "Wi-Fiã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã¯ä½•ã§ã™ã‹ï¼Ÿ â€” \"Nan desu ka\" = qu\u0027est-ce que c\u0027est ? \"Pasuwaado\" vient de l\u0027anglais \"password\".",
-        "source_page":  null
-    },
-    {
-        "id":  "Q047",
-        "niveau":  2,
-        "tags":  [
-                     "restaurant"
-                 ],
-        "question":  "Avez-vous un menu en anglais ?",
-        "reponse_reference":  "Eigo no menyu wa arimasu ka?",
-        "explication":  "è‹±èªžã®ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã¯ã‚ã‚Šã¾ã™ã‹ï¼Ÿ â€” \"Eigo\" = anglais. Beaucoup de restaurants touristiques en ont un, ou ont des photos dans le menu.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q048",
-        "niveau":  2,
-        "tags":  [
-                     "restaurant"
-                 ],
-        "question":  "Je suis vÃ©gÃ©tarien(ne)",
-        "reponse_reference":  "Bejitarian desu",
-        "explication":  "ãƒ™ã‚¸ã‚¿ãƒªã‚¢ãƒ³ã§ã™ â€” Attention : mÃªme les plats \"sans viande\" peuvent contenir du bouillon de poisson (dashi). Pour plus de sÃ©curitÃ©, prÃ©cisez \"niku to sakana nashi\" (sans viande ni poisson).",
-        "source_page":  null
-    },
-    {
-        "id":  "Q049",
-        "niveau":  2,
-        "tags":  [
-                     "restaurant"
-                 ],
-        "question":  "Je voudrais la mÃªme chose que lui/elle (en montrant le plat voisin)",
-        "reponse_reference":  "Onaji mono wo kudasai",
-        "explication":  "åŒã˜ã‚‚ã®ã‚’ãã ã•ã„ â€” \"Onaji\" = pareil/mÃªme. \"Mono\" = chose. TrÃ¨s pratique quand on voit un beau plat sur la table voisine !",
-        "source_page":  null
-    },
-    {
-        "id":  "Q050",
-        "niveau":  2,
-        "tags":  [
-                     "restaurant"
-                 ],
-        "question":  "C\u0027est trop Ã©picÃ© pour moi",
-        "reponse_reference":  "Karai desu",
-        "explication":  "è¾›ã„ã§ã™ â€” \"Karai\" = Ã©picÃ© OU salÃ© selon le contexte. Pour demander moins Ã©picÃ© : \"Karakunai yatsu onegaishimasu\" (quelque chose qui n\u0027est pas Ã©picÃ©).",
-        "source_page":  null
-    },
-    {
-        "id":  "Q051",
-        "niveau":  2,
-        "tags":  [
-                     "shopping"
-                 ],
-        "question":  "Avez-vous Ã§a dans une autre taille ?",
-        "reponse_reference":  "Chigau saizu wa arimasu ka?",
-        "explication":  "é•ã†ã‚µã‚¤ã‚ºã¯ã‚ã‚Šã¾ã™ã‹ï¼Ÿ â€” \"Chigau\" = diffÃ©rent, \"saizu\" vient de l\u0027anglais \"size\". Note : les tailles japonaises sont souvent plus petites qu\u0027en Europe.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q052",
-        "niveau":  2,
-        "tags":  [
-                     "shopping"
-                 ],
-        "question":  "Puis-je essayer Ã§a ? (vÃªtement)",
-        "reponse_reference":  "Kite mite mo ii desu ka?",
-        "explication":  "ç€ã¦ã¿ã¦ã‚‚ã„ã„ã§ã™ã‹ï¼Ÿ â€” \"Kite mite\" = essayer (en portant), \"ii desu ka\" = est-ce que c\u0027est okay ? Pour des chaussures : \"Haite mite mo ii desu ka?\".",
-        "source_page":  null
-    },
-    {
-        "id":  "Q053",
-        "niveau":  2,
-        "tags":  [
-                     "shopping"
-                 ],
-        "question":  "Acceptez-vous les cartes de crÃ©dit ?",
-        "reponse_reference":  "Kurejitto kaado wa tsukaemasu ka?",
-        "explication":  "ã‚¯ãƒ¬ã‚¸ãƒƒãƒˆã‚«ãƒ¼ãƒ‰ã¯ä½¿ãˆã¾ã™ã‹ï¼Ÿ â€” Beaucoup de petits commerces et restaurants au Japon sont encore en espÃ¨ces uniquement (\"genkin nomi\").",
-        "source_page":  null
-    },
-    {
-        "id":  "Q054",
-        "niveau":  2,
-        "tags":  [
-                     "shopping"
-                 ],
-        "question":  "Je vais payer en espÃ¨ces",
-        "reponse_reference":  "Genkin de haraimasu",
-        "explication":  "ç¾é‡‘ã§æ‰•ã„ã¾ã™ â€” \"Genkin\" = espÃ¨ces. Ayez toujours du cash au Japon, surtout dans les zones rurales ou les petits commerces.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q055",
-        "niveau":  2,
-        "tags":  [
-                     "navigation"
-                 ],
-        "question":  "Montrez-moi sur la carte, s\u0027il vous plaÃ®t",
-        "reponse_reference":  "Chizu de oshiete kudasai",
-        "explication":  "åœ°å›³ã§æ•™ãˆã¦ãã ã•ã„ â€” \"Chizu\" = carte/plan. \"Oshiete kudasai\" = montrez-moi / expliquez-moi. Montrer votre carte ou tÃ©lÃ©phone en disant Ã§a est trÃ¨s efficace.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q056",
-        "niveau":  2,
-        "tags":  [
-                     "navigation"
-                 ],
-        "question":  "C\u0027est Ã  quelle distance Ã  pied ?",
-        "reponse_reference":  "Aruite dono kurai desu ka?",
-        "explication":  "æ­©ã„ã¦ã©ã®ãã‚‰ã„ã§ã™ã‹ï¼Ÿ â€” \"Aruite\" = en marchant. La rÃ©ponse sera souvent en minutes (\"fun\" ou \"pun\") plutÃ´t qu\u0027en km.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q057",
-        "niveau":  2,
-        "tags":  [
-                     "navigation"
-                 ],
-        "question":  "Tournez Ã  droite / Ã  gauche",
-        "reponse_reference":  "Migi / hidari ni magatte kudasai",
-        "explication":  "å³/å·¦ã«æ›²ãŒã£ã¦ãã ã•ã„ â€” \"Migi\" = droite, \"hidari\" = gauche, \"magatte\" = tourner. Avec le geste, c\u0027est trÃ¨s clair.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q058",
-        "niveau":  2,
-        "tags":  [
-                     "navigation"
-                 ],
-        "question":  "Tout droit",
-        "reponse_reference":  "Massugu",
-        "explication":  "ã¾ã£ã™ã â€” Simple et clair. On peut aussi dire \"Massugu itte kudasai\" = continuez tout droit.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q059",
-        "niveau":  2,
-        "tags":  [
-                     "argent"
-                 ],
-        "question":  "OÃ¹ puis-je changer de la monnaie ?",
-        "reponse_reference":  "Ryougae wa doko desu ka?",
-        "explication":  "ä¸¡æ›¿ã¯ã©ã“ã§ã™ã‹ï¼Ÿ â€” \"Ryougae\" = change de monnaie. Les meilleures options : bureaux de poste, 7-Eleven, et certains hÃ´tels.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q060",
-        "niveau":  2,
-        "tags":  [
-                     "argent"
-                 ],
-        "question":  "Y a-t-il un distributeur automatique prÃ¨s d\u0027ici ?",
-        "reponse_reference":  "Chikaku ni ATM wa arimasu ka?",
-        "explication":  "è¿‘ãã«ATMã¯ã‚ã‚Šã¾ã™ã‹ï¼Ÿ â€” Les ATM des 7-Eleven et des bureaux de poste (\"Yuubinkyoku\") acceptent les cartes Ã©trangÃ¨res.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q061",
-        "niveau":  2,
-        "tags":  [
-                     "survie"
-                 ],
-        "question":  "Pouvez-vous m\u0027Ã©crire Ã§a ? (adresse, nom)",
-        "reponse_reference":  "Kaite moraemasu ka?",
-        "explication":  "æ›¸ã„ã¦ã‚‚ã‚‰ãˆã¾ã™ã‹ï¼Ÿ â€” Utile quand on ne comprend pas une adresse ou un nom Ã  l\u0027oral. Tendez un papier ou votre tÃ©lÃ©phone.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q062",
-        "niveau":  2,
-        "tags":  [
-                     "transport"
-                 ],
-        "question":  "OÃ¹ puis-je acheter un ticket de transport ?",
-        "reponse_reference":  "Kippu wa doko de kaemasu ka?",
-        "explication":  "åˆ‡ç¬¦ã¯ã©ã“ã§è²·ãˆã¾ã™ã‹ï¼Ÿ â€” \"Kippu\" = billet/ticket. Les machines ont souvent une interface en anglais disponible.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q063",
-        "niveau":  2,
-        "tags":  [
-                     "hÃ´tel"
-                 ],
-        "question":  "Y a-t-il une consigne Ã  bagages ?",
-        "reponse_reference":  "Nimotsu azukari wa arimasu ka?",
-        "explication":  "è·ç‰©é ã‹ã‚Šã¯ã‚ã‚Šã¾ã™ã‹ï¼Ÿ â€” \"Nimotsu\" = bagages, \"azukari\" = garde/consigne. Les gares ont aussi des casiers (\"coin locker\").",
-        "source_page":  null
-    },
-    {
-        "id":  "Q064",
-        "niveau":  2,
-        "tags":  [
-                     "visite"
-                 ],
-        "question":  "Ã€ quelle heure ouvre [lieu] ?",
-        "reponse_reference":  "[Lieu] wa nanji ni akimasu ka?",
-        "explication":  "[å ´æ‰€]ã¯ä½•æ™‚ã«é–‹ãã¾ã™ã‹ï¼Ÿ â€” \"Akimasu\" = s\u0027ouvrir. Pour \"ferme\" : \"shimarimasu\". Ex : \"Kono hakubutsukan wa nanji ni akimasu ka?\" (ce musÃ©e).",
-        "source_page":  null
-    },
-    {
-        "id":  "Q065",
-        "niveau":  2,
-        "tags":  [
-                     "visite"
-                 ],
-        "question":  "Quel est le prix d\u0027entrÃ©e ?",
-        "reponse_reference":  "Nyuujouryou wa ikura desu ka?",
-        "explication":  "å…¥å ´æ–™ã¯ã„ãã‚‰ã§ã™ã‹ï¼Ÿ â€” \"Nyuujouryou\" = droits d\u0027entrÃ©e. \"Ikura\" = combien. Beaucoup de temples et sanctuaires sont gratuits ou peu chers.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q066",
-        "niveau":  2,
-        "tags":  [
-                     "restaurant"
-                 ],
-        "question":  "Je voudrais rÃ©server une table pour 2 personnes",
-        "reponse_reference":  "Futari de yoyaku shitai no desu ga",
-        "explication":  "äºŒäººã§äºˆç´„ã—ãŸã„ã®ã§ã™ãŒ â€” \"Futari\" = deux personnes, \"yoyaku\" = rÃ©servation. Le \"no desu ga\" en fin de phrase adoucit la demande.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q067",
-        "niveau":  2,
-        "tags":  [
-                     "culture"
-                 ],
-        "question":  "Formule de remerciement prononcÃ©e aprÃ¨s avoir mangÃ©",
-        "reponse_reference":  "Gochisousama deshita",
-        "explication":  "ã”ã¡ãã†ã•ã¾ã§ã—ãŸ â€” \"Merci pour ce festin.\" Se dit en quittant le restaurant ou en finissant son repas. Toujours apprÃ©ciÃ© par le personnel.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q068",
-        "niveau":  3,
-        "tags":  [
-                     "urgence"
-                 ],
-        "question":  "On m\u0027a volÃ© mon passeport",
-        "reponse_reference":  "Pasupooto ga nusumaremashita",
-        "explication":  "ãƒ‘ã‚¹ãƒãƒ¼ãƒˆãŒç›—ã¾ã‚Œã¾ã—ãŸ â€” \"Nusumaremashita\" = a Ã©tÃ© volÃ© (forme passive). Rendez-vous au \"kouban\" (petit poste de police de quartier) le plus proche.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q069",
-        "niveau":  3,
-        "tags":  [
-                     "urgence"
-                 ],
-        "question":  "OÃ¹ est l\u0027ambassade de France ?",
-        "reponse_reference":  "Furansu taishikan wa doko desu ka?",
-        "explication":  "ãƒ•ãƒ©ãƒ³ã‚¹å¤§ä½¿é¤¨ã¯ã©ã“ã§ã™ã‹ï¼Ÿ â€” \"Taishikan\" = ambassade. Ã€ Tokyo, l\u0027ambassade de France est Ã  Minami-Azabu, Minato-ku.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q070",
-        "niveau":  3,
-        "tags":  [
-                     "urgence"
-                 ],
-        "question":  "Pouvez-vous appeler un interprÃ¨te ?",
-        "reponse_reference":  "Tsuuyaku wo yonde moraemasu ka?",
-        "explication":  "é€šè¨³ã‚’å‘¼ã‚“ã§ã‚‚ã‚‰ãˆã¾ã™ã‹ï¼Ÿ â€” \"Tsuuyaku\" = interprÃ¨te/traducteur. En cas d\u0027urgence mÃ©dicale ou lÃ©gale, cela peut Ãªtre crucial.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q071",
-        "niveau":  3,
-        "tags":  [
-                     "culture"
-                 ],
-        "question":  "Est-ce que je peux prendre des photos ici ?",
-        "reponse_reference":  "Koko de shashin wo totte mo ii desu ka?",
-        "explication":  "ã“ã“ã§å†™çœŸã‚’æ’®ã£ã¦ã‚‚ã„ã„ã§ã™ã‹ï¼Ÿ â€” \"Shashin\" = photo, \"totte\" = prendre. Toujours demander dans les temples, sanctuaires et musÃ©es.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q072",
-        "niveau":  3,
-        "tags":  [
-                     "apprÃ©ciation"
-                 ],
-        "question":  "C\u0027est magnifique ! (pour un paysage, un bÃ¢timent)",
-        "reponse_reference":  "Subarashii! / Kirei desu ne!",
-        "explication":  "ç´ æ™´ã‚‰ã—ã„ï¼/ ç¶ºéº—ã§ã™ã­ï¼ â€” \"Subarashii\" = magnifique/extraordinaire. \"Kirei\" = beau/propre. Le \"ne\" final cherche l\u0027approbation de l\u0027interlocuteur.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q073",
-        "niveau":  3,
-        "tags":  [
-                     "politesse"
-                 ],
-        "question":  "Je suis vraiment dÃ©solÃ©(e) (excuse formelle et profonde)",
-        "reponse_reference":  "Hontou ni moushiwake gozaimasen",
-        "explication":  "æœ¬å½“ã«ç”³ã—è¨³ã”ã–ã„ã¾ã›ã‚“ â€” Excuse trÃ¨s formelle et sincÃ¨re. \"Hontou ni\" = vraiment. Beaucoup plus fort que \"Sumimasen\". Ã€ rÃ©server pour une vraie faute.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q074",
-        "niveau":  3,
-        "tags":  [
-                     "politesse"
-                 ],
-        "question":  "Puis-je vous dÃ©ranger un moment ? (introduction trÃ¨s polie pour aborder quelqu\u0027un)",
-        "reponse_reference":  "Chotto yoroshii desu ka?",
-        "explication":  "ã¡ã‚‡ã£ã¨ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ â€” Formule polie pour aborder quelqu\u0027un. \"Chotto\" = un peu/un instant. \"Yoroshii\" = version formelle de \"ii\" (bien/okay).",
-        "source_page":  null
-    },
-    {
-        "id":  "Q075",
-        "niveau":  3,
-        "tags":  [
-                     "navigation"
-                 ],
-        "question":  "Je cherche [nom du lieu / temple / musÃ©e]",
-        "reponse_reference":  "[Lieu] wo sagashite imasu",
-        "explication":  "[å ´æ‰€]ã‚’æŽ¢ã—ã¦ã„ã¾ã™ â€” \"Sagashite imasu\" = je suis en train de chercher. Ex : \"Sensou-ji wo sagashite imasu\" pour le temple Senso-ji Ã  Asakusa.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q076",
-        "niveau":  3,
-        "tags":  [
-                     "visite"
-                 ],
-        "question":  "Y a-t-il une rÃ©duction pour les touristes Ã©trangers ?",
-        "reponse_reference":  "Gaikokujin wari-biki wa arimasu ka?",
-        "explication":  "å¤–å›½äººå‰²å¼•ã¯ã‚ã‚Šã¾ã™ã‹ï¼Ÿ â€” \"Gaikokujin\" = Ã©tranger, \"wari-biki\" = rÃ©duction. Certains musÃ©es et transports offrent des tarifs rÃ©duits sur prÃ©sentation du passeport.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q077",
-        "niveau":  3,
-        "tags":  [
-                     "visite"
-                 ],
-        "question":  "Y a-t-il un audio-guide en franÃ§ais ou en anglais ?",
-        "reponse_reference":  "Furansugo / Eigo no oodio gaido wa arimasu ka?",
-        "explication":  "ãƒ•ãƒ©ãƒ³ã‚¹èªž/è‹±èªžã®ã‚ªãƒ¼ãƒ‡ã‚£ã‚ªã‚¬ã‚¤ãƒ‰ã¯ã‚ã‚Šã¾ã™ã‹ï¼Ÿ â€” \"Furansugo\" = franÃ§ais, \"Eigo\" = anglais, \"oodio gaido\" = audio guide.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q078",
-        "niveau":  3,
-        "tags":  [
-                     "conversation"
-                 ],
-        "question":  "C\u0027est ma premiÃ¨re visite au Japon",
-        "reponse_reference":  "Nihon wa hajimete desu",
-        "explication":  "æ—¥æœ¬ã¯åˆã‚ã¦ã§ã™ â€” \"Hajimete\" = premiÃ¨re fois. Cette phrase suscite souvent beaucoup de bienveillance et d\u0027aide de la part des Japonais.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q079",
-        "niveau":  3,
-        "tags":  [
-                     "conversation"
-                 ],
-        "question":  "Je viens de France",
-        "reponse_reference":  "Furansu kara kimashita",
-        "explication":  "ãƒ•ãƒ©ãƒ³ã‚¹ã‹ã‚‰æ¥ã¾ã—ãŸ â€” \"Kara\" = de/depuis. \"Kimashita\" = je suis venu. Les Japonais sont souvent trÃ¨s curieux de votre pays d\u0027origine.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q080",
-        "niveau":  3,
-        "tags":  [
-                     "conversation"
-                 ],
-        "question":  "Comment dit-on [mot] en japonais ?",
-        "reponse_reference":  "[Mot] wa nihongo de nan to iimasu ka?",
-        "explication":  "[è¨€è‘‰]ã¯æ—¥æœ¬èªžã§ä½•ã¨è¨€ã„ã¾ã™ã‹ï¼Ÿ â€” Formule pour apprendre du vocabulaire sur le tas. Les Japonais sont souvent ravis d\u0027enseigner leur langue.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q081",
-        "niveau":  3,
-        "tags":  [
-                     "restaurant"
-                 ],
-        "question":  "Quels plats recommandez-vous ?",
-        "reponse_reference":  "Osusume wa nan desu ka?",
-        "explication":  "ãŠã™ã™ã‚ã¯ä½•ã§ã™ã‹ï¼Ÿ â€” \"Osusume\" = recommandation. Les restaurants affichent souvent leur \"osusume\" du jour sur un tableau Ã  l\u0027entrÃ©e.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q082",
-        "niveau":  3,
-        "tags":  [
-                     "restaurant"
-                 ],
-        "question":  "Ce plat contient-il du porc ?",
-        "reponse_reference":  "Kono ryouri ni buta niku wa haitte imasu ka?",
-        "explication":  "ã“ã®æ–™ç†ã«è±šè‚‰ã¯å…¥ã£ã¦ã„ã¾ã™ã‹ï¼Ÿ â€” \"Buta niku\" = viande de porc, \"haitte imasu ka\" = est-ce que Ã§a contient ? Important pour les personnes halal ou qui Ã©vitent le porc.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q083",
-        "niveau":  3,
-        "tags":  [
-                     "restaurant"
-                 ],
-        "question":  "Je suis allergique Ã  [aliment]",
-        "reponse_reference":  "[Aliment] arerugii ga arimasu",
-        "explication":  "[é£Ÿã¹ç‰©]ã‚¢ãƒ¬ãƒ«ã‚®ãƒ¼ãŒã‚ã‚Šã¾ã™ â€” Exemples : \"Komugi\" (blÃ©), \"Rakkasei\" (cacahuÃ¨tes), \"Ebi\" (crevettes). Mieux vaut le noter par Ã©crit Ã  montrer au restaurant.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q084",
-        "niveau":  3,
-        "tags":  [
-                     "shopping"
-                 ],
-        "question":  "Puis-je avoir un reÃ§u ?",
-        "reponse_reference":  "Ryoushuu-sho wo moraemasu ka?",
-        "explication":  "é ˜åŽæ›¸ã‚’ã‚‚ã‚‰ãˆã¾ã™ã‹ï¼Ÿ â€” \"Ryoushuu-sho\" = reÃ§u officiel. On peut aussi dire \"Reshiito\" (reÃ§u de caisse, de l\u0027anglais \"receipt\").",
-        "source_page":  null
-    },
-    {
-        "id":  "Q085",
-        "niveau":  3,
-        "tags":  [
-                     "shopping"
-                 ],
-        "question":  "Pouvez-vous l\u0027emballer en cadeau ?",
-        "reponse_reference":  "Purezento you ni tsutsunde moraemasu ka?",
-        "explication":  "ãƒ—ãƒ¬ã‚¼ãƒ³ãƒˆç”¨ã«åŒ…ã‚“ã§ã‚‚ã‚‰ãˆã¾ã™ã‹ï¼Ÿ â€” \"Purezento\" = cadeau, \"tsutsunde\" = emballer. Les emballages cadeaux japonais sont souvent magnifiques et offerts gratuitement.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q086",
-        "niveau":  3,
-        "tags":  [
-                     "culture"
-                 ],
-        "question":  "Quelle est la spÃ©cialitÃ© locale de cette rÃ©gion ?",
-        "reponse_reference":  "Kono chihou no meibutsu wa nan desu ka?",
-        "explication":  "ã“ã®åœ°æ–¹ã®åç‰©ã¯ä½•ã§ã™ã‹ï¼Ÿ â€” \"Meibutsu\" = spÃ©cialitÃ©/produit fameux. \"Chihou\" = rÃ©gion. Le Japon a une culture trÃ¨s forte des souvenirs locaux (\"omiyage\").",
-        "source_page":  null
-    },
-    {
-        "id":  "Q087",
-        "niveau":  3,
-        "tags":  [
-                     "transport"
-                 ],
-        "question":  "OÃ¹ puis-je louer un vÃ©lo ?",
-        "reponse_reference":  "Jitensha wo kariru toko wa doko desu ka?",
-        "explication":  "è‡ªè»¢è»Šã‚’å€Ÿã‚Šã‚‹æ‰€ã¯ã©ã“ã§ã™ã‹ï¼Ÿ â€” \"Jitensha\" = vÃ©lo, \"kariru\" = louer. Beaucoup de villes touristiques proposent des locations Ã  des prix abordables.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q088",
-        "niveau":  3,
-        "tags":  [
-                     "transport"
-                 ],
-        "question":  "Pouvez-vous m\u0027appeler un taxi ?",
-        "reponse_reference":  "Takushii wo yonde moraemasu ka?",
-        "explication":  "ã‚¿ã‚¯ã‚·ãƒ¼ã‚’å‘¼ã‚“ã§ã‚‚ã‚‰ãˆã¾ã™ã‹ï¼Ÿ â€” Demander Ã  l\u0027hÃ´tel ou au restaurant d\u0027appeler un taxi pour vous. Plus pratique que de le hÃ©ler dans la rue.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q089",
-        "niveau":  3,
-        "tags":  [
-                     "hÃ´tel"
-                 ],
-        "question":  "Puis-je laisser mes bagages quelques heures ?",
-        "reponse_reference":  "Nimotsu wo azukatte moraemasu ka?",
-        "explication":  "è·ç‰©ã‚’é ã‹ã£ã¦ã‚‚ã‚‰ãˆã¾ã™ã‹ï¼Ÿ â€” \"Azukatte moraemasu ka\" = pourriez-vous garder ? La plupart des hÃ´tels acceptent de garder les bagages avant le check-in ou aprÃ¨s le check-out.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q090",
-        "niveau":  3,
-        "tags":  [
-                     "conversation"
-                 ],
-        "question":  "J\u0027adore la nourriture japonaise",
-        "reponse_reference":  "Nihon ryouri ga daisuki desu",
-        "explication":  "æ—¥æœ¬æ–™ç†ãŒå¤§å¥½ãã§ã™ â€” \"Daisuki\" = j\u0027adore (littÃ©ralement \"grand amour\"). Formule simple et sincÃ¨re qui fait toujours plaisir aux Japonais.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q091",
-        "niveau":  3,
-        "tags":  [
-                     "culture"
-                 ],
-        "question":  "Qu\u0027est-ce que c\u0027est ? (pour un plat ou objet inconnu)",
-        "reponse_reference":  "Kore wa nan desu ka?",
-        "explication":  "ã“ã‚Œã¯ä½•ã§ã™ã‹ï¼Ÿ â€” \"Kore\" = ceci, \"nan\" = quoi. Question fondamentale pour comprendre ce qu\u0027on vous sert ou ce qu\u0027on vend.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q092",
-        "niveau":  3,
-        "tags":  [
-                     "culture"
-                 ],
-        "question":  "Dois-je enlever mes chaussures ici ?",
-        "reponse_reference":  "Kutsu wo nuide mo ii desu ka?",
-        "explication":  "é´ã‚’è„±ã„ã§ã‚‚ã„ã„ã§ã™ã‹ï¼Ÿ â€” \"Kutsu\" = chaussures, \"nuide\" = enlever. Au Japon, on retire les chaussures Ã  l\u0027entrÃ©e des maisons, certains restaurants et temples. Un tatami ou une marche surÃ©levÃ©e indique souvent qu\u0027il faut les enlever.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q093",
-        "niveau":  3,
-        "tags":  [
-                     "navigation"
-                 ],
-        "question":  "Pouvez-vous me recommander un bon restaurant dans le coin ?",
-        "reponse_reference":  "Chikaku de ii resutoran wo oshiete moraemasu ka?",
-        "explication":  "è¿‘ãã§ã„ã„ãƒ¬ã‚¹ãƒˆãƒ©ãƒ³ã‚’æ•™ãˆã¦ã‚‚ã‚‰ãˆã¾ã™ã‹ï¼Ÿ â€” \"Chikaku\" = prÃ¨s d\u0027ici, \"oshiete moraemasu ka\" = pouvez-vous me dire/indiquer ?",
-        "source_page":  null
-    },
-    {
-        "id":  "Q094",
-        "niveau":  3,
-        "tags":  [
-                     "culture"
-                 ],
-        "question":  "Est-ce qu\u0027on peut faire Ã§a ici ? (pour vÃ©rifier une rÃ¨gle ou interdiction)",
-        "reponse_reference":  "Koko de wa dame desu ka?",
-        "explication":  "ã“ã“ã§ã¯ãƒ€ãƒ¡ã§ã™ã‹ï¼Ÿ â€” \"Dame\" = pas bien/interdit. Formule directe pour vÃ©rifier si une action est autorisÃ©e. Accompagner du geste pour plus de clartÃ©.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q095",
-        "niveau":  3,
-        "tags":  [
-                     "transport"
-                 ],
-        "question":  "C\u0027est quelle ligne pour aller Ã  [destination] ?",
-        "reponse_reference":  "[Destination] ni iku niwa nani sen desu ka?",
-        "explication":  "[Destination]ã«è¡Œãã«ã¯ä½•ç·šã§ã™ã‹ï¼Ÿ â€” \"Sen\" = ligne (de train/mÃ©tro). Ex : \"Shinjuku ni iku niwa nani sen desu ka?\" â€” le rÃ©seau de Tokyo est complexe, cette question est trÃ¨s utile.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q096",
-        "niveau":  3,
-        "tags":  [
-                     "hÃ´tel"
-                 ],
-        "question":  "Y a-t-il un onsen dans cet hÃ´tel ou Ã  proximitÃ© ?",
-        "reponse_reference":  "Kono hoteru ni onsen wa arimasu ka?",
-        "explication":  "ã“ã®ãƒ›ãƒ†ãƒ«ã«æ¸©æ³‰ã¯ã‚ã‚Šã¾ã™ã‹ï¼Ÿ â€” \"Onsen\" = source thermale/bain chaud. ExpÃ©rience incontournable au Japon. Attention : les tatouages sont souvent interdits dans les onsen publics.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q097",
-        "niveau":  3,
-        "tags":  [
-                     "visite"
-                 ],
-        "question":  "Ã€ quelle heure commence le spectacle / la cÃ©rÃ©monie ?",
-        "reponse_reference":  "Shouu wa nanji ni hajimarimasu ka?",
-        "explication":  "ã‚·ãƒ§ãƒ¼ã¯ä½•æ™‚ã«å§‹ã¾ã‚Šã¾ã™ã‹ï¼Ÿ â€” \"Hajimarimasu\" = commencer. \"Shouu\" = show/spectacle. Pour \"cÃ©rÃ©monie\" : \"Shiki\" (å¼).",
-        "source_page":  null
-    },
-    {
-        "id":  "Q098",
-        "niveau":  3,
-        "tags":  [
-                     "culture"
-                 ],
-        "question":  "Comment dit-on \"santÃ©\" pour porter un toast ?",
-        "reponse_reference":  "Kanpai!",
-        "explication":  "ä¹¾æ¯ï¼ â€” \"Kanpai\" littÃ©ralement signifie \"verre vide\". On attend que tout le monde soit servi, on lÃ¨ve son verre et on dit \"Kanpai!\". Ne commencez pas Ã  boire avant le toast.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q099",
-        "niveau":  3,
-        "tags":  [
-                     "apprÃ©ciation"
-                 ],
-        "question":  "Ce voyage a Ã©tÃ© inoubliable (pour remercier un hÃ´te ou guide en fin de sÃ©jour)",
-        "reponse_reference":  "Wasurenai tabi deshita",
-        "explication":  "å¿˜ã‚Œãªã„æ—…ã§ã—ãŸ â€” \"Wasurenai\" = inoubliable (que je n\u0027oublierai pas). \"Tabi\" = voyage. Belle faÃ§on de conclure un sÃ©jour avec sincÃ©ritÃ©.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q100",
-        "niveau":  3,
-        "tags":  [
-                     "culture"
-                 ],
-        "question":  "Que rÃ©pond-on quand le personnel crie \"Irasshaimase\" en entrant dans un magasin ?",
-        "reponse_reference":  "(Rien â€” sourire ou hochement de tÃªte suffit)",
-        "explication":  "ã„ã‚‰ã£ã—ã‚ƒã„ã¾ã› = \"Bienvenue !\" criÃ© par le personnel. Vous n\u0027avez PAS Ã  rÃ©pondre verbalement. Un sourire ou un hochement de tÃªte est parfait. Ne pas rÃ©pondre n\u0027est pas impoli du tout.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q101",
-        "niveau":  1,
-        "tags":  [
-                     "chiffres"
-                 ],
-        "question":  "Les chiffres 1 Ã  5 : un, deux, trois, quatre, cinq",
-        "reponse_reference":  "Ichi, ni, san, shi/yon, go",
-        "explication":  "ä¸€ã€äºŒã€ä¸‰ã€å››ã€äº” â€” La base de tout. \"Shi\" et \"yon\" (4) sont deux lectures du mÃªme chiffre. \"Shi\" (æ­») signifiant \"mort\", on prÃ©fÃ¨re souvent \"yon\" dans les contextes courants.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q102",
-        "niveau":  1,
-        "tags":  [
-                     "chiffres"
-                 ],
-        "question":  "Les chiffres 6 Ã  10 : six, sept, huit, neuf, dix",
-        "reponse_reference":  "Roku, shichi/nana, hachi, ku/kyuu, juu",
-        "explication":  "å…­ã€ä¸ƒã€å…«ã€ä¹ã€å â€” \"Shichi\" (7) et \"nana\" (7) sont deux lectures du mÃªme chiffre. \"Ku\" et \"kyuu\" (9) aussi. \"Juu\" = 10.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q103",
-        "niveau":  1,
-        "tags":  [
-                     "chiffres"
-                 ],
-        "question":  "Les dizaines : 20, 30, 50, 100",
-        "reponse_reference":  "Nijuu, sanjuu, gojuu, hyaku",
-        "explication":  "äºŒåã€ä¸‰åã€äº”åã€ç™¾ â€” RÃ¨gle simple : chiffre + \"juu\" pour les dizaines. 20 = ni-juu, 30 = san-juu, etc. 100 = hyaku (Ã  part).",
-        "source_page":  null
-    },
-    {
-        "id":  "Q104",
-        "niveau":  1,
-        "tags":  [
-                     "chiffres"
-                 ],
-        "question":  "1 000 et 10 000 en japonais (fondamental pour les prix au Japon !)",
-        "reponse_reference":  "Sen (1 000) / Ichi-man (10 000)",
-        "explication":  "åƒ / ä¸€ä¸‡ â€” Au Japon tout se compte en \"man\" (10 000). Un billet de 1 000 Â¥ = \"sen en\". Un article Ã  5 000 Â¥ = \"go-sen en\". 10 000 Â¥ = \"ichi-man en\" (billet marron, trÃ¨s courant).",
-        "source_page":  null
-    },
-    {
-        "id":  "Q105",
-        "niveau":  1,
-        "tags":  [
-                     "chiffres"
-                 ],
-        "question":  "Comment dire un prix en yen ? Ex : 1 500 yens",
-        "reponse_reference":  "Sen go-hyaku en desu",
-        "explication":  "1500å††ã§ã™ â€” \"En\" = yen. Structure : nombre + \"en desu\". 500 Â¥ = \"go-hyaku en\", 3 000 Â¥ = \"san-zen en\", 8 000 Â¥ = \"hassen en\" (attention : 3 000 = san-zen, pas san-sen).",
-        "source_page":  null
-    },
-    {
-        "id":  "Q106",
-        "niveau":  1,
-        "tags":  [
-                     "chiffres"
-                 ],
-        "question":  "C\u0027est combien en tout ?",
-        "reponse_reference":  "Zenbu de ikura desu ka?",
-        "explication":  "å…¨éƒ¨ã§ã„ãã‚‰ã§ã™ã‹ï¼Ÿ â€” \"Zenbu\" = tout/au total. Utile pour connaÃ®tre le total avant de payer, surtout quand on achÃ¨te plusieurs articles.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q107",
-        "niveau":  1,
-        "tags":  [
-                     "chiffres"
-                 ],
-        "question":  "Avez-vous quelque chose de moins cher ?",
-        "reponse_reference":  "Motto yasui mono wa arimasu ka?",
-        "explication":  "ã‚‚ã£ã¨å®‰ã„ã‚‚ã®ã¯ã‚ã‚Šã¾ã™ã‹ï¼Ÿ â€” \"Motto\" = plus, \"yasui\" = pas cher/bon marchÃ©, \"mono\" = chose. \"Yasui\" est le contraire de \"takai\" (cher).",
-        "source_page":  null
-    },
-    {
-        "id":  "Q108",
-        "niveau":  1,
-        "tags":  [
-                     "chiffres"
-                 ],
-        "question":  "Je voudrais avoir la monnaie / le rendu de monnaie",
-        "reponse_reference":  "Otsuri wo kudasai",
-        "explication":  "ãŠã¤ã‚Šã‚’ãã ã•ã„ â€” \"Otsuri\" = la monnaie rendue. Utile si on paye avec un grand billet. Les Japonais sont trÃ¨s prÃ©cis avec la monnaie.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q109",
-        "niveau":  2,
-        "tags":  [
-                     "chiffres"
-                 ],
-        "question":  "Comment dire les nombres 11 Ã  19 ? (ex : 11, 15, 19)",
-        "reponse_reference":  "Juu-ichi, juu-go, juu-ku",
-        "explication":  "åä¸€ã€åäº”ã€åä¹ â€” Simple : \"juu\" + le chiffre. 11 = juu-ichi, 12 = juu-ni, 13 = juu-san, 14 = juu-shi/yon, 15 = juu-go, 16 = juu-roku, 17 = juu-shichi/nana, 18 = juu-hachi, 19 = juu-ku/kyuu.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q110",
-        "niveau":  2,
-        "tags":  [
-                     "chiffres"
-                 ],
-        "question":  "Comment dire les centaines irrÃ©guliÃ¨res : 300, 600, 800 ?",
-        "reponse_reference":  "San-byaku, rop-pyaku, hap-pyaku",
-        "explication":  "ä¸‰ç™¾ã€å…­ç™¾ã€å…«ç™¾ â€” Attention aux contactions ! 300 = san-BYAKU (pas san-hyaku), 600 = rop-PYAKU, 800 = hap-PYAKU. 200 = ni-hyaku, 400 = yon-hyaku, 500 = go-hyaku (rÃ©guliers).",
-        "source_page":  null
-    },
-    {
-        "id":  "Q111",
-        "niveau":  2,
-        "tags":  [
-                     "chiffres"
-                 ],
-        "question":  "Comment compter les articles au magasin : 1, 2, 3 piÃ¨ces",
-        "reponse_reference":  "Ichi-ko, ni-ko, san-ko",
-        "explication":  "ä¸€å€‹ã€äºŒå€‹ã€ä¸‰å€‹ â€” \"Ko\" est le compteur gÃ©nÃ©rique pour les objets. On peut aussi utiliser \"hitotsu, futatsu, mittsu\" (style japonais natif). Ex : \"Kore wo ni-ko kudasai\" = donnez-m\u0027en deux.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q112",
-        "niveau":  2,
-        "tags":  [
-                     "chiffres"
-                 ],
-        "question":  "Demander une remise / rÃ©duction : \"Pouvez-vous faire un prix ?\"",
-        "reponse_reference":  "Sukoshi yasuku narimasen ka?",
-        "explication":  "å°‘ã—å®‰ããªã‚Šã¾ã›ã‚“ã‹ï¼Ÿ â€” LittÃ©ralement \"ne pourrait-on pas rendre Ã§a un peu moins cher ?\". Formule trÃ¨s polie pour tenter de nÃ©gocier dans les marchÃ©s touristiques (comme Akihabara ou les marchÃ©s aux puces).",
-        "source_page":  null
-    },
-    {
-        "id":  "Q113",
-        "niveau":  2,
-        "tags":  [
-                     "chiffres"
-                 ],
-        "question":  "C\u0027est gratuit ?",
-        "reponse_reference":  "Muryou desu ka?",
-        "explication":  "ç„¡æ–™ã§ã™ã‹ï¼Ÿ â€” \"Muryou\" = gratuit. TrÃ¨s utile pour les musÃ©es, Ã©vÃ©nements, dÃ©gustations. On peut aussi voir \"tairyou\" (å¤§é‡ = grande quantitÃ©) ne pas confondre !",
-        "source_page":  null
-    },
-    {
-        "id":  "Q114",
-        "niveau":  3,
-        "tags":  [
-                     "chiffres"
-                 ],
-        "question":  "Comment lire un prix affichÃ© Ã  12 800 Â¥ ?",
-        "reponse_reference":  "Ichi-man ni-sen hap-pyaku en",
-        "explication":  "12,800å†† â€” DÃ©composition : 1ä¸‡ (ichi-man) + 2åƒ (ni-sen) + 8ç™¾ (hap-pyaku) = ichi-man ni-sen hap-pyaku en. Au Japon les prix s\u0027expriment naturellement en \"man\" (10 000) pour les gros montants.",
-        "source_page":  null
-    },
-    {
-        "id":  "Q115",
-        "niveau":  3,
-        "tags":  [
-                     "chiffres"
-                 ],
-        "question":  "Est-ce que la taxe est incluse dans ce prix ?",
-        "reponse_reference":  "Zei-komi desu ka?",
-        "explication":  "ç¨Žè¾¼ã¿ã§ã™ã‹ï¼Ÿ â€” \"Zei\" = taxe, \"komi\" = inclus. La TVA japonaise (\"shouhizei\" = 10%) est parfois affichÃ©e sÃ©parÃ©ment dans les magasins. \"Zei-nuki\" = hors taxe. Les touristes peuvent parfois rÃ©cupÃ©rer la taxe (dÃ©taxe) sur prÃ©sentation du passeport.",
-        "source_page":  null
-    }
+[
+  {
+    "id": "Q001",
+    "niveau": 1,
+    "tags": [
+      "politesse"
+    ],
+    "question": "Excusez-moi / Pardon (pour interpeller quelqu'un ou s'excuser lÃ©gÃ¨rement)",
+    "reponse_reference": "Sumimasen",
+    "explication": "ã™ã¿ã¾ã›ã‚“ â€” Formule absolument incontournable. Sert Ã  attirer l'attention d'un passant, s'excuser de dÃ©ranger, ou mÃªme remercier un service rendu. Ã€ connaÃ®tre par cÅ“ur.",
+    "source_page": null
+  },
+  {
+    "id": "Q002",
+    "niveau": 1,
+    "tags": [
+      "politesse"
+    ],
+    "question": "Merci (formule polie standard)",
+    "reponse_reference": "Arigatou gozaimasu",
+    "explication": "ã‚ã‚ŠãŒã¨ã†ã”ã–ã„ã¾ã™ â€” Version formelle et respectueuse. Dans un contexte dÃ©contractÃ© entre amis, on dit simplement \"Arigatou\".",
+    "source_page": null
+  },
+  {
+    "id": "Q003",
+    "niveau": 1,
+    "tags": [
+      "salutation"
+    ],
+    "question": "Bonjour (en journÃ©e, de 10h Ã  18h environ)",
+    "reponse_reference": "Konnichiwa",
+    "explication": "ã“ã‚“ã«ã¡ã¯ â€” La salutation standard de la journÃ©e. Ã‰vitez de l'utiliser le matin ou le soir.",
+    "source_page": null
+  },
+  {
+    "id": "Q004",
+    "niveau": 1,
+    "tags": [
+      "salutation"
+    ],
+    "question": "Bonjour (le matin, avant 10h)",
+    "reponse_reference": "Ohayou gozaimasu",
+    "explication": "ãŠã¯ã‚ˆã†ã”ã–ã„ã¾ã™ â€” Le matin. Version informelle : \"Ohayou\" entre amis ou collÃ¨gues proches.",
+    "source_page": null
+  },
+  {
+    "id": "Q005",
+    "niveau": 1,
+    "tags": [
+      "salutation"
+    ],
+    "question": "Bonsoir (Ã  partir de la tombÃ©e de la nuit)",
+    "reponse_reference": "Konbanwa",
+    "explication": "ã“ã‚“ã°ã‚“ã¯ â€” Salutation du soir. Se prononce avec un \"wa\" final, pas \"ha\".",
+    "source_page": null
+  },
+  {
+    "id": "Q006",
+    "niveau": 1,
+    "tags": [
+      "salutation"
+    ],
+    "question": "Au revoir (sÃ©paration formelle)",
+    "reponse_reference": "Sayounara",
+    "explication": "ã•ã‚ˆã†ãªã‚‰ â€” Adieu assez formel. Entre amis on prÃ©fÃ¨re \"Jaa ne\" (Ã  plus) ou \"Mata ne\" (Ã  bientÃ´t).",
+    "source_page": null
+  },
+  {
+    "id": "Q007",
+    "niveau": 1,
+    "tags": [
+      "basique"
+    ],
+    "question": "Oui",
+    "reponse_reference": "Hai",
+    "explication": "ã¯ã„ â€” Oui. Aussi utilisÃ© pour signifier \"je vous entends\" ou acquiescer poliment sans forcÃ©ment Ãªtre d'accord.",
+    "source_page": null
+  },
+  {
+    "id": "Q008",
+    "niveau": 1,
+    "tags": [
+      "basique"
+    ],
+    "question": "Non",
+    "reponse_reference": "Iie",
+    "explication": "ã„ã„ãˆ â€” Non. Se prononce \"i-i-Ã©\" (deux i distincts). Les Japonais Ã©vitent souvent le refus direct.",
+    "source_page": null
+  },
+  {
+    "id": "Q009",
+    "niveau": 1,
+    "tags": [
+      "survie"
+    ],
+    "question": "Je ne comprends pas",
+    "reponse_reference": "Wakarimasen",
+    "explication": "ã‚ã‹ã‚Šã¾ã›ã‚“ â€” Essentiel quand on ne saisit pas. Peut s'accompagner d'un sourire gÃªnÃ©, ce qui est tout Ã  fait normal.",
+    "source_page": null
+  },
+  {
+    "id": "Q010",
+    "niveau": 1,
+    "tags": [
+      "survie"
+    ],
+    "question": "Je ne parle pas japonais",
+    "reponse_reference": "Nihongo ga hanasemasen",
+    "explication": "æ—¥æœ¬èªžãŒè©±ã›ã¾ã›ã‚“ â€” Utile pour prÃ©venir immÃ©diatement. \"Nihongo\" = japonais, \"hanasemasen\" = ne parle pas.",
+    "source_page": null
+  },
+  {
+    "id": "Q011",
+    "niveau": 1,
+    "tags": [
+      "survie"
+    ],
+    "question": "Parlez-vous anglais ?",
+    "reponse_reference": "Eigo ga hanasemasu ka?",
+    "explication": "è‹±èªžãŒè©±ã›ã¾ã™ã‹ï¼Ÿ â€” \"Eigo\" = anglais. Le \"ka?\" en fin de phrase marque la question en japonais.",
+    "source_page": null
+  },
+  {
+    "id": "Q012",
+    "niveau": 1,
+    "tags": [
+      "politesse"
+    ],
+    "question": "S'il vous plaÃ®t (pour une demande, placÃ© en fin de phrase)",
+    "reponse_reference": "Onegaishimasu",
+    "explication": "ãŠé¡˜ã„ã—ã¾ã™ â€” Se place EN FIN de phrase pour une demande. Exemple : \"Kore wo onegaishimasu\" = \"Ceci, s'il vous plaÃ®t\".",
+    "source_page": null
+  },
+  {
+    "id": "Q013",
+    "niveau": 1,
+    "tags": [
+      "navigation"
+    ],
+    "question": "OÃ¹ sont les toilettes ?",
+    "reponse_reference": "Toire wa doko desu ka?",
+    "explication": "ãƒˆã‚¤ãƒ¬ã¯ã©ã“ã§ã™ã‹ï¼Ÿ â€” \"Toire\" vient de l'anglais \"toilet\". \"Doko\" = oÃ¹. Indispensable !",
+    "source_page": null
+  },
+  {
+    "id": "Q014",
+    "niveau": 1,
+    "tags": [
+      "restaurant"
+    ],
+    "question": "C'est dÃ©licieux !",
+    "reponse_reference": "Oishii!",
+    "explication": "ãŠã„ã—ã„ï¼ â€” Compliment qui fait toujours plaisir au personnel. Version renforcÃ©e : \"Totemo oishii!\" = C'est vraiment dÃ©licieux !",
+    "source_page": null
+  },
+  {
+    "id": "Q015",
+    "niveau": 1,
+    "tags": [
+      "restaurant"
+    ],
+    "question": "L'addition, s'il vous plaÃ®t",
+    "reponse_reference": "Okaikei onegaishimasu",
+    "explication": "ãŠä¼šè¨ˆãŠé¡˜ã„ã—ã¾ã™ â€” \"Okaikei\" = l'addition/la note. On peut aussi mimer un geste d'Ã©criture en l'air ou croiser les index.",
+    "source_page": null
+  },
+  {
+    "id": "Q016",
+    "niveau": 1,
+    "tags": [
+      "shopping"
+    ],
+    "question": "Combien Ã§a coÃ»te ?",
+    "reponse_reference": "Ikura desu ka?",
+    "explication": "ã„ãã‚‰ã§ã™ã‹ï¼Ÿ â€” \"Ikura\" = combien. Question fondamentale pour le shopping.",
+    "source_page": null
+  },
+  {
+    "id": "Q017",
+    "niveau": 1,
+    "tags": [
+      "shopping"
+    ],
+    "question": "Je voudrais celui-ci (en montrant l'objet)",
+    "reponse_reference": "Kore wo kudasai",
+    "explication": "ã“ã‚Œã‚’ãã ã•ã„ â€” \"Kore\" = ceci (objet proche de soi). \"Kudasai\" = donnez-moi / je voudrais. Utilisable partout.",
+    "source_page": null
+  },
+  {
+    "id": "Q018",
+    "niveau": 1,
+    "tags": [
+      "urgence"
+    ],
+    "question": "Au secours !",
+    "reponse_reference": "Tasukete!",
+    "explication": "åŠ©ã‘ã¦ï¼ â€” Cri d'urgence. Ã€ crier fort si besoin. Peut aussi s'utiliser plus lÃ©gÃ¨rement pour demander de l'aide.",
+    "source_page": null
+  },
+  {
+    "id": "Q019",
+    "niveau": 1,
+    "tags": [
+      "urgence"
+    ],
+    "question": "Appelez une ambulance !",
+    "reponse_reference": "Kyuukyuusha wo yonde kudasai!",
+    "explication": "æ•‘æ€¥è»Šã‚’å‘¼ã‚“ã§ãã ã•ã„ï¼ â€” \"Kyuukyuusha\" = ambulance. Le numÃ©ro d'urgence mÃ©dicale au Japon est le 119.",
+    "source_page": null
+  },
+  {
+    "id": "Q020",
+    "niveau": 1,
+    "tags": [
+      "urgence"
+    ],
+    "question": "Appelez la police !",
+    "reponse_reference": "Keisatsu wo yonde kudasai!",
+    "explication": "è­¦å¯Ÿã‚’å‘¼ã‚“ã§ãã ã•ã„ï¼ â€” \"Keisatsu\" = police. Le numÃ©ro de la police au Japon est le 110.",
+    "source_page": null
+  },
+  {
+    "id": "Q021",
+    "niveau": 1,
+    "tags": [
+      "survie"
+    ],
+    "question": "Pouvez-vous rÃ©pÃ©ter, s'il vous plaÃ®t ?",
+    "reponse_reference": "Mou ichido itte kudasai",
+    "explication": "ã‚‚ã†ä¸€åº¦è¨€ã£ã¦ãã ã•ã„ â€” \"Mou ichido\" = encore une fois. \"Itte kudasai\" = dites-le. TrÃ¨s utile !",
+    "source_page": null
+  },
+  {
+    "id": "Q022",
+    "niveau": 1,
+    "tags": [
+      "survie"
+    ],
+    "question": "Pouvez-vous parler plus lentement ?",
+    "reponse_reference": "Yukkuri hanashite kudasai",
+    "explication": "ã‚†ã£ãã‚Šè©±ã—ã¦ãã ã•ã„ â€” \"Yukkuri\" = lentement. Les Japonais font gÃ©nÃ©ralement un effort immÃ©diat.",
+    "source_page": null
+  },
+  {
+    "id": "Q023",
+    "niveau": 1,
+    "tags": [
+      "transport"
+    ],
+    "question": "Un billet pour [destination], s'il vous plaÃ®t (1 ticket)",
+    "reponse_reference": "[Destination] made ichi-mai kudasai",
+    "explication": "[Destination]ã¾ã§ä¸€æžšãã ã•ã„ â€” \"Made\" = jusqu'Ã . \"Ichi-mai\" = un billet (mai = compteur pour objets plats).",
+    "source_page": null
+  },
+  {
+    "id": "Q024",
+    "niveau": 1,
+    "tags": [
+      "transport"
+    ],
+    "question": "Aller simple",
+    "reponse_reference": "Katamichi",
+    "explication": "ç‰‡é“ â€” \"Kata\" = un sens, \"michi\" = chemin. Ã€ prÃ©ciser au guichet avec \"katamichi de\" (pour l'aller simple).",
+    "source_page": null
+  },
+  {
+    "id": "Q025",
+    "niveau": 1,
+    "tags": [
+      "transport"
+    ],
+    "question": "Aller-retour",
+    "reponse_reference": "Oufuku",
+    "explication": "å¾€å¾© â€” \"Ou\" = aller, \"fuku\" = retour. Ã€ dire au guichet : \"Oufuku de\" = en aller-retour.",
+    "source_page": null
+  },
+  {
+    "id": "Q026",
+    "niveau": 1,
+    "tags": [
+      "restaurant"
+    ],
+    "question": "De l'eau, s'il vous plaÃ®t",
+    "reponse_reference": "Omizu onegaishimasu",
+    "explication": "ãŠæ°´ãŠé¡˜ã„ã—ã¾ã™ â€” L'eau est souvent servie gratuitement au restaurant au Japon. \"Omizu\" = eau (forme polie).",
+    "source_page": null
+  },
+  {
+    "id": "Q027",
+    "niveau": 1,
+    "tags": [
+      "urgence"
+    ],
+    "question": "Je suis malade",
+    "reponse_reference": "Byouki desu",
+    "explication": "ç—…æ°—ã§ã™ â€” \"Byouki\" = maladie. Pour Ãªtre plus prÃ©cis, pointez la zone douloureuse et dites \"Koko ga itai desu\" (j'ai mal ici).",
+    "source_page": null
+  },
+  {
+    "id": "Q028",
+    "niveau": 1,
+    "tags": [
+      "urgence"
+    ],
+    "question": "J'ai mal ici (en montrant la zone)",
+    "reponse_reference": "Koko ga itai desu",
+    "explication": "ã“ã“ãŒç—›ã„ã§ã™ â€” \"Koko\" = ici, \"itai\" = douloureux. Simple et universellement compris avec le geste.",
+    "source_page": null
+  },
+  {
+    "id": "Q029",
+    "niveau": 1,
+    "tags": [
+      "navigation"
+    ],
+    "question": "Je me suis perdu(e)",
+    "reponse_reference": "Mayoimashita",
+    "explication": "è¿·ã„ã¾ã—ãŸ â€” \"Mayoimashita\" est le passÃ© de \"mayou\" (se perdre). AccompagnÃ© d'une carte, Ã§a permet d'obtenir de l'aide facilement.",
+    "source_page": null
+  },
+  {
+    "id": "Q030",
+    "niveau": 1,
+    "tags": [
+      "transport"
+    ],
+    "question": "Ã€ quelle heure part le prochain train ?",
+    "reponse_reference": "Tsugi no densha wa nanji ni demasu ka?",
+    "explication": "æ¬¡ã®é›»è»Šã¯ä½•æ™‚ã«å‡ºã¾ã™ã‹ï¼Ÿ â€” \"Tsugi\" = prochain, \"densha\" = train, \"nanji\" = quelle heure, \"demasu\" = partir.",
+    "source_page": null
+  },
+  {
+    "id": "Q031",
+    "niveau": 1,
+    "tags": [
+      "shopping"
+    ],
+    "question": "C'est trop cher",
+    "reponse_reference": "Takai desu",
+    "explication": "é«˜ã„ã§ã™ â€” \"Takai\" = cher (ou haut). Attention : le marchandage est rare au Japon, sauf dans certains marchÃ©s touristiques.",
+    "source_page": null
+  },
+  {
+    "id": "Q032",
+    "niveau": 1,
+    "tags": [
+      "salutation"
+    ],
+    "question": "Bonne nuit (avant de dormir)",
+    "reponse_reference": "Oyasumi nasai",
+    "explication": "ãŠã‚„ã™ã¿ãªã•ã„ â€” Se dit avant d'aller se coucher. Version informelle entre amis : \"Oyasumi\".",
+    "source_page": null
+  },
+  {
+    "id": "Q033",
+    "niveau": 1,
+    "tags": [
+      "culture"
+    ],
+    "question": "Formule prononcÃ©e avant de manger (l'Ã©quivalent de 'bon appÃ©tit' cÃ´tÃ© mangeur)",
+    "reponse_reference": "Itadakimasu",
+    "explication": "ã„ãŸã ãã¾ã™ â€” LittÃ©ralement \"je reÃ§ois humblement\". Se dit en joignant les mains. Indispensable pour montrer qu'on respecte la culture japonaise.",
+    "source_page": null
+  },
+  {
+    "id": "Q034",
+    "niveau": 2,
+    "tags": [
+      "navigation"
+    ],
+    "question": "OÃ¹ se trouve la gare de [nom] ?",
+    "reponse_reference": "[Nom]-eki wa doko desu ka?",
+    "explication": "[åå‰]é§…ã¯ã©ã“ã§ã™ã‹ï¼Ÿ â€” \"Eki\" = gare. Ex : \"Shinjuku-eki wa doko desu ka?\" pour la gare de Shinjuku.",
+    "source_page": null
+  },
+  {
+    "id": "Q035",
+    "niveau": 2,
+    "tags": [
+      "navigation"
+    ],
+    "question": "OÃ¹ se trouve l'arrÃªt de bus ?",
+    "reponse_reference": "Basu tei wa doko desu ka?",
+    "explication": "ãƒã‚¹åœã¯ã©ã“ã§ã™ã‹ï¼Ÿ â€” \"Basu\" (bus) vient de l'anglais, \"tei\" = arrÃªt/station.",
+    "source_page": null
+  },
+  {
+    "id": "Q036",
+    "niveau": 2,
+    "tags": [
+      "navigation"
+    ],
+    "question": "OÃ¹ est la station de mÃ©tro la plus proche ?",
+    "reponse_reference": "Chikatetsu no eki wa doko desu ka?",
+    "explication": "åœ°ä¸‹é‰„ã®é§…ã¯ã©ã“ã§ã™ã‹ï¼Ÿ â€” \"Chikatetsu\" = mÃ©tro (littÃ©ralement \"chemin de fer souterrain\"). \"Eki\" = gare/station.",
+    "source_page": null
+  },
+  {
+    "id": "Q037",
+    "niveau": 2,
+    "tags": [
+      "transport"
+    ],
+    "question": "Est-ce que ce train va Ã  [destination] ?",
+    "reponse_reference": "Kono densha wa [destination] ni ikimasu ka?",
+    "explication": "ã“ã®é›»è»Šã¯[destination]ã«è¡Œãã¾ã™ã‹ï¼Ÿ â€” \"Kono\" = ce/cet, \"ikimasu\" = aller. TrÃ¨s utile pour vÃ©rifier avant de monter.",
+    "source_page": null
+  },
+  {
+    "id": "Q038",
+    "niveau": 2,
+    "tags": [
+      "transport"
+    ],
+    "question": "Combien de temps jusqu'Ã  [destination] ?",
+    "reponse_reference": "[Destination] made dono kurai kakarimasu ka?",
+    "explication": "[Destination]ã¾ã§ã©ã®ãã‚‰ã„ã‹ã‹ã‚Šã¾ã™ã‹ï¼Ÿ â€” \"Dono kurai\" = combien, \"kakarimasu\" = Ã§a prend (du temps).",
+    "source_page": null
+  },
+  {
+    "id": "Q039",
+    "niveau": 2,
+    "tags": [
+      "transport"
+    ],
+    "question": "Je voudrais un taxi",
+    "reponse_reference": "Takushii wo onegaishimasu",
+    "explication": "ã‚¿ã‚¯ã‚·ãƒ¼ã‚’ãŠé¡˜ã„ã—ã¾ã™ â€” Les taxis japonais ont les portiÃ¨res automatiques cÃ´tÃ© passager. On ne les ouvre pas soi-mÃªme !",
+    "source_page": null
+  },
+  {
+    "id": "Q040",
+    "niveau": 2,
+    "tags": [
+      "transport"
+    ],
+    "question": "Amenez-moi Ã  cette adresse (en montrant le tÃ©lÃ©phone)",
+    "reponse_reference": "Kono juusho made onegaishimasu",
+    "explication": "ã“ã®ä½æ‰€ã¾ã§ãŠé¡˜ã„ã—ã¾ã™ â€” \"Juusho\" = adresse. Montrer l'adresse Ã©crite sur votre tÃ©lÃ©phone est souvent plus efficace que de la prononcer.",
+    "source_page": null
+  },
+  {
+    "id": "Q041",
+    "niveau": 2,
+    "tags": [
+      "transport"
+    ],
+    "question": "OÃ¹ est l'aÃ©roport ?",
+    "reponse_reference": "Kuukou wa doko desu ka?",
+    "explication": "ç©ºæ¸¯ã¯ã©ã“ã§ã™ã‹ï¼Ÿ â€” \"Kuukou\" = aÃ©roport. Ã€ Tokyo : Haneda (ç¾½ç”°) pour les vols domestiques/Asie, Narita (æˆç”°) pour les vols internationaux.",
+    "source_page": null
+  },
+  {
+    "id": "Q042",
+    "niveau": 2,
+    "tags": [
+      "hÃ´tel"
+    ],
+    "question": "J'ai une rÃ©servation au nom de [nom]",
+    "reponse_reference": "[Nom] de yoyaku shite imasu",
+    "explication": "[åå‰]ã§äºˆç´„ã—ã¦ã„ã¾ã™ â€” \"Yoyaku\" = rÃ©servation. Indispensable au check-in. Avoir le nom en romaji aide.",
+    "source_page": null
+  },
+  {
+    "id": "Q043",
+    "niveau": 2,
+    "tags": [
+      "hÃ´tel"
+    ],
+    "question": "Le petit-dÃ©jeuner est-il inclus ?",
+    "reponse_reference": "Choushoku wa tsukimasuka?",
+    "explication": "æœé£Ÿã¯ä»˜ãã¾ã™ã‹ï¼Ÿ â€” \"Choushoku\" = petit-dÃ©jeuner. Les hÃ´tels japonais proposent souvent un buffet japonais traditionnel magnifique.",
+    "source_page": null
+  },
+  {
+    "id": "Q044",
+    "niveau": 2,
+    "tags": [
+      "hÃ´tel"
+    ],
+    "question": "Ã€ quelle heure est le check-out ?",
+    "reponse_reference": "Chekku-auto wa nanji desu ka?",
+    "explication": "ãƒã‚§ãƒƒã‚¯ã‚¢ã‚¦ãƒˆã¯ä½•æ™‚ã§ã™ã‹ï¼Ÿ â€” \"Chekku-auto\" vient de l'anglais. GÃ©nÃ©ralement 11h ou 12h dans la plupart des hÃ´tels japonais.",
+    "source_page": null
+  },
+  {
+    "id": "Q045",
+    "niveau": 2,
+    "tags": [
+      "hÃ´tel"
+    ],
+    "question": "Avez-vous du Wi-Fi ?",
+    "reponse_reference": "Wai-fai wa arimasu ka?",
+    "explication": "Wi-Fiã¯ã‚ã‚Šã¾ã™ã‹ï¼Ÿ â€” \"Arimasu ka\" = est-ce qu'il y a ? / avez-vous ? Formule universelle pour vÃ©rifier la disponibilitÃ© de quelque chose.",
+    "source_page": null
+  },
+  {
+    "id": "Q046",
+    "niveau": 2,
+    "tags": [
+      "hÃ´tel"
+    ],
+    "question": "Quel est le mot de passe Wi-Fi ?",
+    "reponse_reference": "Wai-fai no pasuwaado wa nan desu ka?",
+    "explication": "Wi-Fiã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã¯ä½•ã§ã™ã‹ï¼Ÿ â€” \"Nan desu ka\" = qu'est-ce que c'est ? \"Pasuwaado\" vient de l'anglais \"password\".",
+    "source_page": null
+  },
+  {
+    "id": "Q047",
+    "niveau": 2,
+    "tags": [
+      "restaurant"
+    ],
+    "question": "Avez-vous un menu en anglais ?",
+    "reponse_reference": "Eigo no menyu wa arimasu ka?",
+    "explication": "è‹±èªžã®ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã¯ã‚ã‚Šã¾ã™ã‹ï¼Ÿ â€” \"Eigo\" = anglais. Beaucoup de restaurants touristiques en ont un, ou ont des photos dans le menu.",
+    "source_page": null
+  },
+  {
+    "id": "Q048",
+    "niveau": 2,
+    "tags": [
+      "restaurant"
+    ],
+    "question": "Je suis vÃ©gÃ©tarien(ne)",
+    "reponse_reference": "Bejitarian desu",
+    "explication": "ãƒ™ã‚¸ã‚¿ãƒªã‚¢ãƒ³ã§ã™ â€” Attention : mÃªme les plats \"sans viande\" peuvent contenir du bouillon de poisson (dashi). Pour plus de sÃ©curitÃ©, prÃ©cisez \"niku to sakana nashi\" (sans viande ni poisson).",
+    "source_page": null
+  },
+  {
+    "id": "Q049",
+    "niveau": 2,
+    "tags": [
+      "restaurant"
+    ],
+    "question": "Je voudrais la mÃªme chose que lui/elle (en montrant le plat voisin)",
+    "reponse_reference": "Onaji mono wo kudasai",
+    "explication": "åŒã˜ã‚‚ã®ã‚’ãã ã•ã„ â€” \"Onaji\" = pareil/mÃªme. \"Mono\" = chose. TrÃ¨s pratique quand on voit un beau plat sur la table voisine !",
+    "source_page": null
+  },
+  {
+    "id": "Q050",
+    "niveau": 2,
+    "tags": [
+      "restaurant"
+    ],
+    "question": "C'est trop Ã©picÃ© pour moi",
+    "reponse_reference": "Karai desu",
+    "explication": "è¾›ã„ã§ã™ â€” \"Karai\" = Ã©picÃ© OU salÃ© selon le contexte. Pour demander moins Ã©picÃ© : \"Karakunai yatsu onegaishimasu\" (quelque chose qui n'est pas Ã©picÃ©).",
+    "source_page": null
+  },
+  {
+    "id": "Q051",
+    "niveau": 2,
+    "tags": [
+      "shopping"
+    ],
+    "question": "Avez-vous Ã§a dans une autre taille ?",
+    "reponse_reference": "Chigau saizu wa arimasu ka?",
+    "explication": "é•ã†ã‚µã‚¤ã‚ºã¯ã‚ã‚Šã¾ã™ã‹ï¼Ÿ â€” \"Chigau\" = diffÃ©rent, \"saizu\" vient de l'anglais \"size\". Note : les tailles japonaises sont souvent plus petites qu'en Europe.",
+    "source_page": null
+  },
+  {
+    "id": "Q052",
+    "niveau": 2,
+    "tags": [
+      "shopping"
+    ],
+    "question": "Puis-je essayer Ã§a ? (vÃªtement)",
+    "reponse_reference": "Kite mite mo ii desu ka?",
+    "explication": "ç€ã¦ã¿ã¦ã‚‚ã„ã„ã§ã™ã‹ï¼Ÿ â€” \"Kite mite\" = essayer (en portant), \"ii desu ka\" = est-ce que c'est okay ? Pour des chaussures : \"Haite mite mo ii desu ka?\".",
+    "source_page": null
+  },
+  {
+    "id": "Q053",
+    "niveau": 2,
+    "tags": [
+      "shopping"
+    ],
+    "question": "Acceptez-vous les cartes de crÃ©dit ?",
+    "reponse_reference": "Kurejitto kaado wa tsukaemasu ka?",
+    "explication": "ã‚¯ãƒ¬ã‚¸ãƒƒãƒˆã‚«ãƒ¼ãƒ‰ã¯ä½¿ãˆã¾ã™ã‹ï¼Ÿ â€” Beaucoup de petits commerces et restaurants au Japon sont encore en espÃ¨ces uniquement (\"genkin nomi\").",
+    "source_page": null
+  },
+  {
+    "id": "Q054",
+    "niveau": 2,
+    "tags": [
+      "shopping"
+    ],
+    "question": "Je vais payer en espÃ¨ces",
+    "reponse_reference": "Genkin de haraimasu",
+    "explication": "ç¾é‡‘ã§æ‰•ã„ã¾ã™ â€” \"Genkin\" = espÃ¨ces. Ayez toujours du cash au Japon, surtout dans les zones rurales ou les petits commerces.",
+    "source_page": null
+  },
+  {
+    "id": "Q055",
+    "niveau": 2,
+    "tags": [
+      "navigation"
+    ],
+    "question": "Montrez-moi sur la carte, s'il vous plaÃ®t",
+    "reponse_reference": "Chizu de oshiete kudasai",
+    "explication": "åœ°å›³ã§æ•™ãˆã¦ãã ã•ã„ â€” \"Chizu\" = carte/plan. \"Oshiete kudasai\" = montrez-moi / expliquez-moi. Montrer votre carte ou tÃ©lÃ©phone en disant Ã§a est trÃ¨s efficace.",
+    "source_page": null
+  },
+  {
+    "id": "Q056",
+    "niveau": 2,
+    "tags": [
+      "navigation"
+    ],
+    "question": "C'est Ã  quelle distance Ã  pied ?",
+    "reponse_reference": "Aruite dono kurai desu ka?",
+    "explication": "æ­©ã„ã¦ã©ã®ãã‚‰ã„ã§ã™ã‹ï¼Ÿ â€” \"Aruite\" = en marchant. La rÃ©ponse sera souvent en minutes (\"fun\" ou \"pun\") plutÃ´t qu'en km.",
+    "source_page": null
+  },
+  {
+    "id": "Q057",
+    "niveau": 2,
+    "tags": [
+      "navigation"
+    ],
+    "question": "Tournez Ã  droite / Ã  gauche",
+    "reponse_reference": "Migi / hidari ni magatte kudasai",
+    "explication": "å³/å·¦ã«æ›²ãŒã£ã¦ãã ã•ã„ â€” \"Migi\" = droite, \"hidari\" = gauche, \"magatte\" = tourner. Avec le geste, c'est trÃ¨s clair.",
+    "source_page": null
+  },
+  {
+    "id": "Q058",
+    "niveau": 2,
+    "tags": [
+      "navigation"
+    ],
+    "question": "Tout droit",
+    "reponse_reference": "Massugu",
+    "explication": "ã¾ã£ã™ã â€” Simple et clair. On peut aussi dire \"Massugu itte kudasai\" = continuez tout droit.",
+    "source_page": null
+  },
+  {
+    "id": "Q059",
+    "niveau": 2,
+    "tags": [
+      "argent"
+    ],
+    "question": "OÃ¹ puis-je changer de la monnaie ?",
+    "reponse_reference": "Ryougae wa doko desu ka?",
+    "explication": "ä¸¡æ›¿ã¯ã©ã“ã§ã™ã‹ï¼Ÿ â€” \"Ryougae\" = change de monnaie. Les meilleures options : bureaux de poste, 7-Eleven, et certains hÃ´tels.",
+    "source_page": null
+  },
+  {
+    "id": "Q060",
+    "niveau": 2,
+    "tags": [
+      "argent"
+    ],
+    "question": "Y a-t-il un distributeur automatique prÃ¨s d'ici ?",
+    "reponse_reference": "Chikaku ni ATM wa arimasu ka?",
+    "explication": "è¿‘ãã«ATMã¯ã‚ã‚Šã¾ã™ã‹ï¼Ÿ â€” Les ATM des 7-Eleven et des bureaux de poste (\"Yuubinkyoku\") acceptent les cartes Ã©trangÃ¨res.",
+    "source_page": null
+  },
+  {
+    "id": "Q061",
+    "niveau": 2,
+    "tags": [
+      "survie"
+    ],
+    "question": "Pouvez-vous m'Ã©crire Ã§a ? (adresse, nom)",
+    "reponse_reference": "Kaite moraemasu ka?",
+    "explication": "æ›¸ã„ã¦ã‚‚ã‚‰ãˆã¾ã™ã‹ï¼Ÿ â€” Utile quand on ne comprend pas une adresse ou un nom Ã  l'oral. Tendez un papier ou votre tÃ©lÃ©phone.",
+    "source_page": null
+  },
+  {
+    "id": "Q062",
+    "niveau": 2,
+    "tags": [
+      "transport"
+    ],
+    "question": "OÃ¹ puis-je acheter un ticket de transport ?",
+    "reponse_reference": "Kippu wa doko de kaemasu ka?",
+    "explication": "åˆ‡ç¬¦ã¯ã©ã“ã§è²·ãˆã¾ã™ã‹ï¼Ÿ â€” \"Kippu\" = billet/ticket. Les machines ont souvent une interface en anglais disponible.",
+    "source_page": null
+  },
+  {
+    "id": "Q063",
+    "niveau": 2,
+    "tags": [
+      "hÃ´tel"
+    ],
+    "question": "Y a-t-il une consigne Ã  bagages ?",
+    "reponse_reference": "Nimotsu azukari wa arimasu ka?",
+    "explication": "è·ç‰©é ã‹ã‚Šã¯ã‚ã‚Šã¾ã™ã‹ï¼Ÿ â€” \"Nimotsu\" = bagages, \"azukari\" = garde/consigne. Les gares ont aussi des casiers (\"coin locker\").",
+    "source_page": null
+  },
+  {
+    "id": "Q064",
+    "niveau": 2,
+    "tags": [
+      "visite"
+    ],
+    "question": "Ã€ quelle heure ouvre [lieu] ?",
+    "reponse_reference": "[Lieu] wa nanji ni akimasu ka?",
+    "explication": "[å ´æ‰€]ã¯ä½•æ™‚ã«é–‹ãã¾ã™ã‹ï¼Ÿ â€” \"Akimasu\" = s'ouvrir. Pour \"ferme\" : \"shimarimasu\". Ex : \"Kono hakubutsukan wa nanji ni akimasu ka?\" (ce musÃ©e).",
+    "source_page": null
+  },
+  {
+    "id": "Q065",
+    "niveau": 2,
+    "tags": [
+      "visite"
+    ],
+    "question": "Quel est le prix d'entrÃ©e ?",
+    "reponse_reference": "Nyuujouryou wa ikura desu ka?",
+    "explication": "å…¥å ´æ–™ã¯ã„ãã‚‰ã§ã™ã‹ï¼Ÿ â€” \"Nyuujouryou\" = droits d'entrÃ©e. \"Ikura\" = combien. Beaucoup de temples et sanctuaires sont gratuits ou peu chers.",
+    "source_page": null
+  },
+  {
+    "id": "Q066",
+    "niveau": 2,
+    "tags": [
+      "restaurant"
+    ],
+    "question": "Je voudrais rÃ©server une table pour 2 personnes",
+    "reponse_reference": "Futari de yoyaku shitai no desu ga",
+    "explication": "äºŒäººã§äºˆç´„ã—ãŸã„ã®ã§ã™ãŒ â€” \"Futari\" = deux personnes, \"yoyaku\" = rÃ©servation. Le \"no desu ga\" en fin de phrase adoucit la demande.",
+    "source_page": null
+  },
+  {
+    "id": "Q067",
+    "niveau": 2,
+    "tags": [
+      "culture"
+    ],
+    "question": "Formule de remerciement prononcÃ©e aprÃ¨s avoir mangÃ©",
+    "reponse_reference": "Gochisousama deshita",
+    "explication": "ã”ã¡ãã†ã•ã¾ã§ã—ãŸ â€” \"Merci pour ce festin.\" Se dit en quittant le restaurant ou en finissant son repas. Toujours apprÃ©ciÃ© par le personnel.",
+    "source_page": null
+  },
+  {
+    "id": "Q068",
+    "niveau": 3,
+    "tags": [
+      "urgence"
+    ],
+    "question": "On m'a volÃ© mon passeport",
+    "reponse_reference": "Pasupooto ga nusumaremashita",
+    "explication": "ãƒ‘ã‚¹ãƒãƒ¼ãƒˆãŒç›—ã¾ã‚Œã¾ã—ãŸ â€” \"Nusumaremashita\" = a Ã©tÃ© volÃ© (forme passive). Rendez-vous au \"kouban\" (petit poste de police de quartier) le plus proche.",
+    "source_page": null
+  },
+  {
+    "id": "Q069",
+    "niveau": 3,
+    "tags": [
+      "urgence"
+    ],
+    "question": "OÃ¹ est l'ambassade de France ?",
+    "reponse_reference": "Furansu taishikan wa doko desu ka?",
+    "explication": "ãƒ•ãƒ©ãƒ³ã‚¹å¤§ä½¿é¤¨ã¯ã©ã“ã§ã™ã‹ï¼Ÿ â€” \"Taishikan\" = ambassade. Ã€ Tokyo, l'ambassade de France est Ã  Minami-Azabu, Minato-ku.",
+    "source_page": null
+  },
+  {
+    "id": "Q070",
+    "niveau": 3,
+    "tags": [
+      "urgence"
+    ],
+    "question": "Pouvez-vous appeler un interprÃ¨te ?",
+    "reponse_reference": "Tsuuyaku wo yonde moraemasu ka?",
+    "explication": "é€šè¨³ã‚’å‘¼ã‚“ã§ã‚‚ã‚‰ãˆã¾ã™ã‹ï¼Ÿ â€” \"Tsuuyaku\" = interprÃ¨te/traducteur. En cas d'urgence mÃ©dicale ou lÃ©gale, cela peut Ãªtre crucial.",
+    "source_page": null
+  },
+  {
+    "id": "Q071",
+    "niveau": 3,
+    "tags": [
+      "culture"
+    ],
+    "question": "Est-ce que je peux prendre des photos ici ?",
+    "reponse_reference": "Koko de shashin wo totte mo ii desu ka?",
+    "explication": "ã“ã“ã§å†™çœŸã‚’æ’®ã£ã¦ã‚‚ã„ã„ã§ã™ã‹ï¼Ÿ â€” \"Shashin\" = photo, \"totte\" = prendre. Toujours demander dans les temples, sanctuaires et musÃ©es.",
+    "source_page": null
+  },
+  {
+    "id": "Q072",
+    "niveau": 3,
+    "tags": [
+      "apprÃ©ciation"
+    ],
+    "question": "C'est magnifique ! (pour un paysage, un bÃ¢timent)",
+    "reponse_reference": "Subarashii! / Kirei desu ne!",
+    "explication": "ç´ æ™´ã‚‰ã—ã„ï¼/ ç¶ºéº—ã§ã™ã­ï¼ â€” \"Subarashii\" = magnifique/extraordinaire. \"Kirei\" = beau/propre. Le \"ne\" final cherche l'approbation de l'interlocuteur.",
+    "source_page": null
+  },
+  {
+    "id": "Q073",
+    "niveau": 3,
+    "tags": [
+      "politesse"
+    ],
+    "question": "Je suis vraiment dÃ©solÃ©(e) (excuse formelle et profonde)",
+    "reponse_reference": "Hontou ni moushiwake gozaimasen",
+    "explication": "æœ¬å½“ã«ç”³ã—è¨³ã”ã–ã„ã¾ã›ã‚“ â€” Excuse trÃ¨s formelle et sincÃ¨re. \"Hontou ni\" = vraiment. Beaucoup plus fort que \"Sumimasen\". Ã€ rÃ©server pour une vraie faute.",
+    "source_page": null
+  },
+  {
+    "id": "Q074",
+    "niveau": 3,
+    "tags": [
+      "politesse"
+    ],
+    "question": "Puis-je vous dÃ©ranger un moment ? (introduction trÃ¨s polie pour aborder quelqu'un)",
+    "reponse_reference": "Chotto yoroshii desu ka?",
+    "explication": "ã¡ã‚‡ã£ã¨ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ â€” Formule polie pour aborder quelqu'un. \"Chotto\" = un peu/un instant. \"Yoroshii\" = version formelle de \"ii\" (bien/okay).",
+    "source_page": null
+  },
+  {
+    "id": "Q075",
+    "niveau": 3,
+    "tags": [
+      "navigation"
+    ],
+    "question": "Je cherche [nom du lieu / temple / musÃ©e]",
+    "reponse_reference": "[Lieu] wo sagashite imasu",
+    "explication": "[å ´æ‰€]ã‚’æŽ¢ã—ã¦ã„ã¾ã™ â€” \"Sagashite imasu\" = je suis en train de chercher. Ex : \"Sensou-ji wo sagashite imasu\" pour le temple Senso-ji Ã  Asakusa.",
+    "source_page": null
+  },
+  {
+    "id": "Q076",
+    "niveau": 3,
+    "tags": [
+      "visite"
+    ],
+    "question": "Y a-t-il une rÃ©duction pour les touristes Ã©trangers ?",
+    "reponse_reference": "Gaikokujin wari-biki wa arimasu ka?",
+    "explication": "å¤–å›½äººå‰²å¼•ã¯ã‚ã‚Šã¾ã™ã‹ï¼Ÿ â€” \"Gaikokujin\" = Ã©tranger, \"wari-biki\" = rÃ©duction. Certains musÃ©es et transports offrent des tarifs rÃ©duits sur prÃ©sentation du passeport.",
+    "source_page": null
+  },
+  {
+    "id": "Q077",
+    "niveau": 3,
+    "tags": [
+      "visite"
+    ],
+    "question": "Y a-t-il un audio-guide en franÃ§ais ou en anglais ?",
+    "reponse_reference": "Furansugo / Eigo no oodio gaido wa arimasu ka?",
+    "explication": "ãƒ•ãƒ©ãƒ³ã‚¹èªž/è‹±èªžã®ã‚ªãƒ¼ãƒ‡ã‚£ã‚ªã‚¬ã‚¤ãƒ‰ã¯ã‚ã‚Šã¾ã™ã‹ï¼Ÿ â€” \"Furansugo\" = franÃ§ais, \"Eigo\" = anglais, \"oodio gaido\" = audio guide.",
+    "source_page": null
+  },
+  {
+    "id": "Q078",
+    "niveau": 3,
+    "tags": [
+      "conversation"
+    ],
+    "question": "C'est ma premiÃ¨re visite au Japon",
+    "reponse_reference": "Nihon wa hajimete desu",
+    "explication": "æ—¥æœ¬ã¯åˆã‚ã¦ã§ã™ â€” \"Hajimete\" = premiÃ¨re fois. Cette phrase suscite souvent beaucoup de bienveillance et d'aide de la part des Japonais.",
+    "source_page": null
+  },
+  {
+    "id": "Q079",
+    "niveau": 3,
+    "tags": [
+      "conversation"
+    ],
+    "question": "Je viens de France",
+    "reponse_reference": "Furansu kara kimashita",
+    "explication": "ãƒ•ãƒ©ãƒ³ã‚¹ã‹ã‚‰æ¥ã¾ã—ãŸ â€” \"Kara\" = de/depuis. \"Kimashita\" = je suis venu. Les Japonais sont souvent trÃ¨s curieux de votre pays d'origine.",
+    "source_page": null
+  },
+  {
+    "id": "Q080",
+    "niveau": 3,
+    "tags": [
+      "conversation"
+    ],
+    "question": "Comment dit-on [mot] en japonais ?",
+    "reponse_reference": "[Mot] wa nihongo de nan to iimasu ka?",
+    "explication": "[è¨€è‘‰]ã¯æ—¥æœ¬èªžã§ä½•ã¨è¨€ã„ã¾ã™ã‹ï¼Ÿ â€” Formule pour apprendre du vocabulaire sur le tas. Les Japonais sont souvent ravis d'enseigner leur langue.",
+    "source_page": null
+  },
+  {
+    "id": "Q081",
+    "niveau": 3,
+    "tags": [
+      "restaurant"
+    ],
+    "question": "Quels plats recommandez-vous ?",
+    "reponse_reference": "Osusume wa nan desu ka?",
+    "explication": "ãŠã™ã™ã‚ã¯ä½•ã§ã™ã‹ï¼Ÿ â€” \"Osusume\" = recommandation. Les restaurants affichent souvent leur \"osusume\" du jour sur un tableau Ã  l'entrÃ©e.",
+    "source_page": null
+  },
+  {
+    "id": "Q082",
+    "niveau": 3,
+    "tags": [
+      "restaurant"
+    ],
+    "question": "Ce plat contient-il du porc ?",
+    "reponse_reference": "Kono ryouri ni buta niku wa haitte imasu ka?",
+    "explication": "ã“ã®æ–™ç†ã«è±šè‚‰ã¯å…¥ã£ã¦ã„ã¾ã™ã‹ï¼Ÿ â€” \"Buta niku\" = viande de porc, \"haitte imasu ka\" = est-ce que Ã§a contient ? Important pour les personnes halal ou qui Ã©vitent le porc.",
+    "source_page": null
+  },
+  {
+    "id": "Q083",
+    "niveau": 3,
+    "tags": [
+      "restaurant"
+    ],
+    "question": "Je suis allergique Ã  [aliment]",
+    "reponse_reference": "[Aliment] arerugii ga arimasu",
+    "explication": "[é£Ÿã¹ç‰©]ã‚¢ãƒ¬ãƒ«ã‚®ãƒ¼ãŒã‚ã‚Šã¾ã™ â€” Exemples : \"Komugi\" (blÃ©), \"Rakkasei\" (cacahuÃ¨tes), \"Ebi\" (crevettes). Mieux vaut le noter par Ã©crit Ã  montrer au restaurant.",
+    "source_page": null
+  },
+  {
+    "id": "Q084",
+    "niveau": 3,
+    "tags": [
+      "shopping"
+    ],
+    "question": "Puis-je avoir un reÃ§u ?",
+    "reponse_reference": "Ryoushuu-sho wo moraemasu ka?",
+    "explication": "é ˜åŽæ›¸ã‚’ã‚‚ã‚‰ãˆã¾ã™ã‹ï¼Ÿ â€” \"Ryoushuu-sho\" = reÃ§u officiel. On peut aussi dire \"Reshiito\" (reÃ§u de caisse, de l'anglais \"receipt\").",
+    "source_page": null
+  },
+  {
+    "id": "Q085",
+    "niveau": 3,
+    "tags": [
+      "shopping"
+    ],
+    "question": "Pouvez-vous l'emballer en cadeau ?",
+    "reponse_reference": "Purezento you ni tsutsunde moraemasu ka?",
+    "explication": "ãƒ—ãƒ¬ã‚¼ãƒ³ãƒˆç”¨ã«åŒ…ã‚“ã§ã‚‚ã‚‰ãˆã¾ã™ã‹ï¼Ÿ â€” \"Purezento\" = cadeau, \"tsutsunde\" = emballer. Les emballages cadeaux japonais sont souvent magnifiques et offerts gratuitement.",
+    "source_page": null
+  },
+  {
+    "id": "Q086",
+    "niveau": 3,
+    "tags": [
+      "culture"
+    ],
+    "question": "Quelle est la spÃ©cialitÃ© locale de cette rÃ©gion ?",
+    "reponse_reference": "Kono chihou no meibutsu wa nan desu ka?",
+    "explication": "ã“ã®åœ°æ–¹ã®åç‰©ã¯ä½•ã§ã™ã‹ï¼Ÿ â€” \"Meibutsu\" = spÃ©cialitÃ©/produit fameux. \"Chihou\" = rÃ©gion. Le Japon a une culture trÃ¨s forte des souvenirs locaux (\"omiyage\").",
+    "source_page": null
+  },
+  {
+    "id": "Q087",
+    "niveau": 3,
+    "tags": [
+      "transport"
+    ],
+    "question": "OÃ¹ puis-je louer un vÃ©lo ?",
+    "reponse_reference": "Jitensha wo kariru toko wa doko desu ka?",
+    "explication": "è‡ªè»¢è»Šã‚’å€Ÿã‚Šã‚‹æ‰€ã¯ã©ã“ã§ã™ã‹ï¼Ÿ â€” \"Jitensha\" = vÃ©lo, \"kariru\" = louer. Beaucoup de villes touristiques proposent des locations Ã  des prix abordables.",
+    "source_page": null
+  },
+  {
+    "id": "Q088",
+    "niveau": 3,
+    "tags": [
+      "transport"
+    ],
+    "question": "Pouvez-vous m'appeler un taxi ?",
+    "reponse_reference": "Takushii wo yonde moraemasu ka?",
+    "explication": "ã‚¿ã‚¯ã‚·ãƒ¼ã‚’å‘¼ã‚“ã§ã‚‚ã‚‰ãˆã¾ã™ã‹ï¼Ÿ â€” Demander Ã  l'hÃ´tel ou au restaurant d'appeler un taxi pour vous. Plus pratique que de le hÃ©ler dans la rue.",
+    "source_page": null
+  },
+  {
+    "id": "Q089",
+    "niveau": 3,
+    "tags": [
+      "hÃ´tel"
+    ],
+    "question": "Puis-je laisser mes bagages quelques heures ?",
+    "reponse_reference": "Nimotsu wo azukatte moraemasu ka?",
+    "explication": "è·ç‰©ã‚’é ã‹ã£ã¦ã‚‚ã‚‰ãˆã¾ã™ã‹ï¼Ÿ â€” \"Azukatte moraemasu ka\" = pourriez-vous garder ? La plupart des hÃ´tels acceptent de garder les bagages avant le check-in ou aprÃ¨s le check-out.",
+    "source_page": null
+  },
+  {
+    "id": "Q090",
+    "niveau": 3,
+    "tags": [
+      "conversation"
+    ],
+    "question": "J'adore la nourriture japonaise",
+    "reponse_reference": "Nihon ryouri ga daisuki desu",
+    "explication": "æ—¥æœ¬æ–™ç†ãŒå¤§å¥½ãã§ã™ â€” \"Daisuki\" = j'adore (littÃ©ralement \"grand amour\"). Formule simple et sincÃ¨re qui fait toujours plaisir aux Japonais.",
+    "source_page": null
+  },
+  {
+    "id": "Q091",
+    "niveau": 3,
+    "tags": [
+      "culture"
+    ],
+    "question": "Qu'est-ce que c'est ? (pour un plat ou objet inconnu)",
+    "reponse_reference": "Kore wa nan desu ka?",
+    "explication": "ã“ã‚Œã¯ä½•ã§ã™ã‹ï¼Ÿ â€” \"Kore\" = ceci, \"nan\" = quoi. Question fondamentale pour comprendre ce qu'on vous sert ou ce qu'on vend.",
+    "source_page": null
+  },
+  {
+    "id": "Q092",
+    "niveau": 3,
+    "tags": [
+      "culture"
+    ],
+    "question": "Dois-je enlever mes chaussures ici ?",
+    "reponse_reference": "Kutsu wo nuide mo ii desu ka?",
+    "explication": "é´ã‚’è„±ã„ã§ã‚‚ã„ã„ã§ã™ã‹ï¼Ÿ â€” \"Kutsu\" = chaussures, \"nuide\" = enlever. Au Japon, on retire les chaussures Ã  l'entrÃ©e des maisons, certains restaurants et temples. Un tatami ou une marche surÃ©levÃ©e indique souvent qu'il faut les enlever.",
+    "source_page": null
+  },
+  {
+    "id": "Q093",
+    "niveau": 3,
+    "tags": [
+      "navigation"
+    ],
+    "question": "Pouvez-vous me recommander un bon restaurant dans le coin ?",
+    "reponse_reference": "Chikaku de ii resutoran wo oshiete moraemasu ka?",
+    "explication": "è¿‘ãã§ã„ã„ãƒ¬ã‚¹ãƒˆãƒ©ãƒ³ã‚’æ•™ãˆã¦ã‚‚ã‚‰ãˆã¾ã™ã‹ï¼Ÿ â€” \"Chikaku\" = prÃ¨s d'ici, \"oshiete moraemasu ka\" = pouvez-vous me dire/indiquer ?",
+    "source_page": null
+  },
+  {
+    "id": "Q094",
+    "niveau": 3,
+    "tags": [
+      "culture"
+    ],
+    "question": "Est-ce qu'on peut faire Ã§a ici ? (pour vÃ©rifier une rÃ¨gle ou interdiction)",
+    "reponse_reference": "Koko de wa dame desu ka?",
+    "explication": "ã“ã“ã§ã¯ãƒ€ãƒ¡ã§ã™ã‹ï¼Ÿ â€” \"Dame\" = pas bien/interdit. Formule directe pour vÃ©rifier si une action est autorisÃ©e. Accompagner du geste pour plus de clartÃ©.",
+    "source_page": null
+  },
+  {
+    "id": "Q095",
+    "niveau": 3,
+    "tags": [
+      "transport"
+    ],
+    "question": "C'est quelle ligne pour aller Ã  [destination] ?",
+    "reponse_reference": "[Destination] ni iku niwa nani sen desu ka?",
+    "explication": "[Destination]ã«è¡Œãã«ã¯ä½•ç·šã§ã™ã‹ï¼Ÿ â€” \"Sen\" = ligne (de train/mÃ©tro). Ex : \"Shinjuku ni iku niwa nani sen desu ka?\" â€” le rÃ©seau de Tokyo est complexe, cette question est trÃ¨s utile.",
+    "source_page": null
+  },
+  {
+    "id": "Q096",
+    "niveau": 3,
+    "tags": [
+      "hÃ´tel"
+    ],
+    "question": "Y a-t-il un onsen dans cet hÃ´tel ou Ã  proximitÃ© ?",
+    "reponse_reference": "Kono hoteru ni onsen wa arimasu ka?",
+    "explication": "ã“ã®ãƒ›ãƒ†ãƒ«ã«æ¸©æ³‰ã¯ã‚ã‚Šã¾ã™ã‹ï¼Ÿ â€” \"Onsen\" = source thermale/bain chaud. ExpÃ©rience incontournable au Japon. Attention : les tatouages sont souvent interdits dans les onsen publics.",
+    "source_page": null
+  },
+  {
+    "id": "Q097",
+    "niveau": 3,
+    "tags": [
+      "visite"
+    ],
+    "question": "Ã€ quelle heure commence le spectacle / la cÃ©rÃ©monie ?",
+    "reponse_reference": "Shouu wa nanji ni hajimarimasu ka?",
+    "explication": "ã‚·ãƒ§ãƒ¼ã¯ä½•æ™‚ã«å§‹ã¾ã‚Šã¾ã™ã‹ï¼Ÿ â€” \"Hajimarimasu\" = commencer. \"Shouu\" = show/spectacle. Pour \"cÃ©rÃ©monie\" : \"Shiki\" (å¼).",
+    "source_page": null
+  },
+  {
+    "id": "Q098",
+    "niveau": 3,
+    "tags": [
+      "culture"
+    ],
+    "question": "Comment dit-on \"santÃ©\" pour porter un toast ?",
+    "reponse_reference": "Kanpai!",
+    "explication": "ä¹¾æ¯ï¼ â€” \"Kanpai\" littÃ©ralement signifie \"verre vide\". On attend que tout le monde soit servi, on lÃ¨ve son verre et on dit \"Kanpai!\". Ne commencez pas Ã  boire avant le toast.",
+    "source_page": null
+  },
+  {
+    "id": "Q099",
+    "niveau": 3,
+    "tags": [
+      "apprÃ©ciation"
+    ],
+    "question": "Ce voyage a Ã©tÃ© inoubliable (pour remercier un hÃ´te ou guide en fin de sÃ©jour)",
+    "reponse_reference": "Wasurenai tabi deshita",
+    "explication": "å¿˜ã‚Œãªã„æ—…ã§ã—ãŸ â€” \"Wasurenai\" = inoubliable (que je n'oublierai pas). \"Tabi\" = voyage. Belle faÃ§on de conclure un sÃ©jour avec sincÃ©ritÃ©.",
+    "source_page": null
+  },
+  {
+    "id": "Q100",
+    "niveau": 3,
+    "tags": [
+      "culture"
+    ],
+    "question": "Que rÃ©pond-on quand le personnel crie \"Irasshaimase\" en entrant dans un magasin ?",
+    "reponse_reference": "(Rien â€” sourire ou hochement de tÃªte suffit)",
+    "explication": "ã„ã‚‰ã£ã—ã‚ƒã„ã¾ã› = \"Bienvenue !\" criÃ© par le personnel. Vous n'avez PAS Ã  rÃ©pondre verbalement. Un sourire ou un hochement de tÃªte est parfait. Ne pas rÃ©pondre n'est pas impoli du tout.",
+    "source_page": null
+  },
+  {
+    "id": "Q101",
+    "niveau": 1,
+    "tags": [
+      "chiffres"
+    ],
+    "question": "Les chiffres 1 Ã  5 : un, deux, trois, quatre, cinq",
+    "reponse_reference": "Ichi, ni, san, shi/yon, go",
+    "explication": "ä¸€ã€äºŒã€ä¸‰ã€å››ã€äº” â€” La base de tout. \"Shi\" et \"yon\" (4) sont deux lectures du mÃªme chiffre. \"Shi\" (æ­») signifiant \"mort\", on prÃ©fÃ¨re souvent \"yon\" dans les contextes courants.",
+    "source_page": null
+  },
+  {
+    "id": "Q102",
+    "niveau": 1,
+    "tags": [
+      "chiffres"
+    ],
+    "question": "Les chiffres 6 Ã  10 : six, sept, huit, neuf, dix",
+    "reponse_reference": "Roku, shichi/nana, hachi, ku/kyuu, juu",
+    "explication": "å…­ã€ä¸ƒã€å…«ã€ä¹ã€å â€” \"Shichi\" (7) et \"nana\" (7) sont deux lectures du mÃªme chiffre. \"Ku\" et \"kyuu\" (9) aussi. \"Juu\" = 10.",
+    "source_page": null
+  },
+  {
+    "id": "Q103",
+    "niveau": 1,
+    "tags": [
+      "chiffres"
+    ],
+    "question": "Les dizaines : 20, 30, 50, 100",
+    "reponse_reference": "Nijuu, sanjuu, gojuu, hyaku",
+    "explication": "äºŒåã€ä¸‰åã€äº”åã€ç™¾ â€” RÃ¨gle simple : chiffre + \"juu\" pour les dizaines. 20 = ni-juu, 30 = san-juu, etc. 100 = hyaku (Ã  part).",
+    "source_page": null
+  },
+  {
+    "id": "Q104",
+    "niveau": 1,
+    "tags": [
+      "chiffres"
+    ],
+    "question": "1 000 et 10 000 en japonais (fondamental pour les prix au Japon !)",
+    "reponse_reference": "Sen (1 000) / Ichi-man (10 000)",
+    "explication": "åƒ / ä¸€ä¸‡ â€” Au Japon tout se compte en \"man\" (10 000). Un billet de 1 000 Â¥ = \"sen en\". Un article Ã  5 000 Â¥ = \"go-sen en\". 10 000 Â¥ = \"ichi-man en\" (billet marron, trÃ¨s courant).",
+    "source_page": null
+  },
+  {
+    "id": "Q105",
+    "niveau": 1,
+    "tags": [
+      "chiffres"
+    ],
+    "question": "Comment dire un prix en yen ? Ex : 1 500 yens",
+    "reponse_reference": "Sen go-hyaku en desu",
+    "explication": "1500å††ã§ã™ â€” \"En\" = yen. Structure : nombre + \"en desu\". 500 Â¥ = \"go-hyaku en\", 3 000 Â¥ = \"san-zen en\", 8 000 Â¥ = \"hassen en\" (attention : 3 000 = san-zen, pas san-sen).",
+    "source_page": null
+  },
+  {
+    "id": "Q106",
+    "niveau": 1,
+    "tags": [
+      "chiffres"
+    ],
+    "question": "C'est combien en tout ?",
+    "reponse_reference": "Zenbu de ikura desu ka?",
+    "explication": "å…¨éƒ¨ã§ã„ãã‚‰ã§ã™ã‹ï¼Ÿ â€” \"Zenbu\" = tout/au total. Utile pour connaÃ®tre le total avant de payer, surtout quand on achÃ¨te plusieurs articles.",
+    "source_page": null
+  },
+  {
+    "id": "Q107",
+    "niveau": 1,
+    "tags": [
+      "chiffres"
+    ],
+    "question": "Avez-vous quelque chose de moins cher ?",
+    "reponse_reference": "Motto yasui mono wa arimasu ka?",
+    "explication": "ã‚‚ã£ã¨å®‰ã„ã‚‚ã®ã¯ã‚ã‚Šã¾ã™ã‹ï¼Ÿ â€” \"Motto\" = plus, \"yasui\" = pas cher/bon marchÃ©, \"mono\" = chose. \"Yasui\" est le contraire de \"takai\" (cher).",
+    "source_page": null
+  },
+  {
+    "id": "Q108",
+    "niveau": 1,
+    "tags": [
+      "chiffres"
+    ],
+    "question": "Je voudrais avoir la monnaie / le rendu de monnaie",
+    "reponse_reference": "Otsuri wo kudasai",
+    "explication": "ãŠã¤ã‚Šã‚’ãã ã•ã„ â€” \"Otsuri\" = la monnaie rendue. Utile si on paye avec un grand billet. Les Japonais sont trÃ¨s prÃ©cis avec la monnaie.",
+    "source_page": null
+  },
+  {
+    "id": "Q109",
+    "niveau": 2,
+    "tags": [
+      "chiffres"
+    ],
+    "question": "Comment dire les nombres 11 Ã  19 ? (ex : 11, 15, 19)",
+    "reponse_reference": "Juu-ichi, juu-go, juu-ku",
+    "explication": "åä¸€ã€åäº”ã€åä¹ â€” Simple : \"juu\" + le chiffre. 11 = juu-ichi, 12 = juu-ni, 13 = juu-san, 14 = juu-shi/yon, 15 = juu-go, 16 = juu-roku, 17 = juu-shichi/nana, 18 = juu-hachi, 19 = juu-ku/kyuu.",
+    "source_page": null
+  },
+  {
+    "id": "Q110",
+    "niveau": 2,
+    "tags": [
+      "chiffres"
+    ],
+    "question": "Comment dire les centaines irrÃ©guliÃ¨res : 300, 600, 800 ?",
+    "reponse_reference": "San-byaku, rop-pyaku, hap-pyaku",
+    "explication": "ä¸‰ç™¾ã€å…­ç™¾ã€å…«ç™¾ â€” Attention aux contactions ! 300 = san-BYAKU (pas san-hyaku), 600 = rop-PYAKU, 800 = hap-PYAKU. 200 = ni-hyaku, 400 = yon-hyaku, 500 = go-hyaku (rÃ©guliers).",
+    "source_page": null
+  },
+  {
+    "id": "Q111",
+    "niveau": 2,
+    "tags": [
+      "chiffres"
+    ],
+    "question": "Comment compter les articles au magasin : 1, 2, 3 piÃ¨ces",
+    "reponse_reference": "Ichi-ko, ni-ko, san-ko",
+    "explication": "ä¸€å€‹ã€äºŒå€‹ã€ä¸‰å€‹ â€” \"Ko\" est le compteur gÃ©nÃ©rique pour les objets. On peut aussi utiliser \"hitotsu, futatsu, mittsu\" (style japonais natif). Ex : \"Kore wo ni-ko kudasai\" = donnez-m'en deux.",
+    "source_page": null
+  },
+  {
+    "id": "Q112",
+    "niveau": 2,
+    "tags": [
+      "chiffres"
+    ],
+    "question": "Demander une remise / rÃ©duction : \"Pouvez-vous faire un prix ?\"",
+    "reponse_reference": "Sukoshi yasuku narimasen ka?",
+    "explication": "å°‘ã—å®‰ããªã‚Šã¾ã›ã‚“ã‹ï¼Ÿ â€” LittÃ©ralement \"ne pourrait-on pas rendre Ã§a un peu moins cher ?\". Formule trÃ¨s polie pour tenter de nÃ©gocier dans les marchÃ©s touristiques (comme Akihabara ou les marchÃ©s aux puces).",
+    "source_page": null
+  },
+  {
+    "id": "Q113",
+    "niveau": 2,
+    "tags": [
+      "chiffres"
+    ],
+    "question": "C'est gratuit ?",
+    "reponse_reference": "Muryou desu ka?",
+    "explication": "ç„¡æ–™ã§ã™ã‹ï¼Ÿ â€” \"Muryou\" = gratuit. TrÃ¨s utile pour les musÃ©es, Ã©vÃ©nements, dÃ©gustations. On peut aussi voir \"tairyou\" (å¤§é‡ = grande quantitÃ©) ne pas confondre !",
+    "source_page": null
+  },
+  {
+    "id": "Q114",
+    "niveau": 3,
+    "tags": [
+      "chiffres"
+    ],
+    "question": "Comment lire un prix affichÃ© Ã  12 800 Â¥ ?",
+    "reponse_reference": "Ichi-man ni-sen hap-pyaku en",
+    "explication": "12,800å†† â€” DÃ©composition : 1ä¸‡ (ichi-man) + 2åƒ (ni-sen) + 8ç™¾ (hap-pyaku) = ichi-man ni-sen hap-pyaku en. Au Japon les prix s'expriment naturellement en \"man\" (10 000) pour les gros montants.",
+    "source_page": null
+  },
+  {
+    "id": "Q115",
+    "niveau": 3,
+    "tags": [
+      "chiffres"
+    ],
+    "question": "Est-ce que la taxe est incluse dans ce prix ?",
+    "reponse_reference": "Zei-komi desu ka?",
+    "explication": "ç¨Žè¾¼ã¿ã§ã™ã‹ï¼Ÿ â€” \"Zei\" = taxe, \"komi\" = inclus. La TVA japonaise (\"shouhizei\" = 10%) est parfois affichÃ©e sÃ©parÃ©ment dans les magasins. \"Zei-nuki\" = hors taxe. Les touristes peuvent parfois rÃ©cupÃ©rer la taxe (dÃ©taxe) sur prÃ©sentation du passeport.",
+    "source_page": null
+  }
 ]
