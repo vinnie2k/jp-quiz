@@ -255,8 +255,8 @@
     <p>Essaie un autre thème ou niveau, ou clique sur <strong>Tout voir</strong>.</p>
   </div>
   <div id="done-state" class="empty-state hidden">
-    <h2>🏆 Félicitations !</h2>
-    <p>Tu as maîtrisé toutes les expressions de cette sélection.<br>
+    <h2 id="done-title">🏆 Félicitations !</h2>
+    <p id="done-msg">Tu as maîtrisé toutes les expressions de cette sélection.<br>
     Tu es prêt(e) pour le Japon !</p>
   </div>
 
@@ -506,7 +506,24 @@ async function loadQuestion() {
   setPhase('idle');
   const data = await api('GET', BASE + '/api/question' + filtersToQuery());
   if (!data) return;
-  if (data.done) { setPhase('done'); return; }
+  if (data.done) {
+    const p = (filters.niveaux.size || filters.tags.size) ? 'sf' : 's';
+    const tot  = parseInt(document.getElementById(p+'-maitrisee').textContent||0)
+               + parseInt(document.getElementById(p+'-reconfirmer').textContent||0)
+               + parseInt(document.getElementById(p+'-retravailler').textContent||0)
+               + parseInt(document.getElementById(p+'-nonvue').textContent||0);
+    const mai  = parseInt(document.getElementById(p+'-maitrisee').textContent||0);
+    const pending = parseInt(document.getElementById(p+'-reconfirmer').textContent||0)
+                  + parseInt(document.getElementById(p+'-retravailler').textContent||0);
+    if (mai >= tot && tot > 0) {
+      document.getElementById('done-title').textContent = '🏆 Félicitations !';
+      document.getElementById('done-msg').innerHTML = 'Tu as maîtrisé toutes les expressions de cette sélection.<br>Tu es prêt(e) pour le Japon !';
+    } else {
+      document.getElementById('done-title').textContent = '⏸ Pause méritée !';
+      document.getElementById('done-msg').innerHTML = pending + ' expression' + (pending > 1 ? 's' : '') + ' en cours reviendront bientôt.<br><span style="font-size:.85rem;color:#888;">Continue à un autre niveau ou thème, ou reviens dans quelques questions.</span>';
+    }
+    setPhase('done'); return;
+  }
   if (!data.id)  { setPhase('empty'); return; }
 
   state.question = data;
