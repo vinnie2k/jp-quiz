@@ -572,19 +572,19 @@ async function submitAnswer(correct) {
     : '✗ Noté — reviendra bientôt pour renforcement';
   fb.className = `result-feedback ${correct ? 'result-correct' : 'result-wrong'}`;
   show('result-feedback');
-  updateHeaderStats(result.stats);
-  updateProgress(result.stats);
-  if (result.showBilan) showBilan(result.compteur, result.stats);
+  await refreshStats();
+  if (result.showBilan) showBilan(result.compteur);
   else setTimeout(loadQuestion, 450);
 }
 
 // ── Bilan ─────────────────────────────────────────────────────────────────────
-function showBilan(compteur, s) {
+function showBilan(compteur) {
   document.getElementById('bilan-titre').textContent = `📊 Bilan — Q.${compteur}`;
-  document.getElementById('b-maitrisee').textContent    = s.maitrisee;
-  document.getElementById('b-reconfirmer').textContent  = s.a_reconfirmer;
-  document.getElementById('b-retravailler').textContent = s.a_retravailler;
-  document.getElementById('b-nonvue').textContent       = s.non_vue;
+  const p = (filters.niveaux.size || filters.tags.size) ? 'sf' : 's';
+  document.getElementById('b-maitrisee').textContent    = document.getElementById(p+'-maitrisee').textContent;
+  document.getElementById('b-reconfirmer').textContent  = document.getElementById(p+'-reconfirmer').textContent;
+  document.getElementById('b-retravailler').textContent = document.getElementById(p+'-retravailler').textContent;
+  document.getElementById('b-nonvue').textContent       = document.getElementById(p+'-nonvue').textContent;
   show('bilan-modal');
 }
 function closeBilan() { hide('bilan-modal'); loadQuestion(); }
